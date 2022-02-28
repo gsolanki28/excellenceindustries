@@ -1,0 +1,158 @@
+.featured {
+  padding-bottom: 54.16%;
+  background: url("../../assets/images/featured-img.png") no-repeat center;
+  background-size: cover;
+  margin-top: -130px;
+}
+
+.featured_content {
+  position: absolute;
+  left: 61px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #FFFFFF;
+}
+
+.featured_content-title {
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 62px;
+}
+
+.featured_content-p {
+  margin-top: 4px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.featured_content-a {
+  margin-top: 23px;
+  font-size: 18px;
+  line-height: 65px;
+  color: #ffffff;
+}
+
+.featured_content-a-svg {
+  margin-left: 30px;
+}
+
+.explore_content {
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.explore_content-h1 {
+  text-transform: uppercase;
+}
+
+.explore_content-p {
+  margin-top: 33px;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.explore_content-span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0098BF;
+  margin-top: 18px;
+}
+
+.explore_content-span-svg {
+  margin-right: 30px;
+}
+
+.explore-img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  max-width: 548px;
+  right: 0;
+}
+
+.explore-img.max-w-50 {
+  max-width: 50%;
+}
+
+.explore .type-2.explore-img {
+  right: auto;
+  left: 0;
+}
+
+.explore .type-2.explore_content {
+  left: auto;
+  right: 0;
+}
+
+.abt-spt {
+  background: #F6F6F6;
+  padding: 93px 0;
+}
+
+.abt-spt .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 630px 1fr;
+      grid-template-columns: 630px 1fr;
+  grid-gap: 75px;
+}
+
+.abt-spt .grid.type-2 {
+  -ms-grid-columns: 1fr 630px;
+      grid-template-columns: 1fr 630px;
+}
+
+.abt-spt_content {
+  padding: 25px 0 0;
+}
+
+.abt-spt_content-p {
+  font-size: 21px;
+  line-height: 30px;
+  margin: 30px 0;
+}
+
+.abt-spt .support {
+  margin-top: 100px;
+}
+
+.contactus {
+  padding-bottom: 25.13%;
+  background: url("../../assets/images/contact.png") no-repeat center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.contactus_content {
+  position: absolute;
+  z-index: 10;
+}
+
+.contactus-p {
+  font-size: 42px;
+  line-height: 35px;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+}
+
+.contactus:after {
+  background: #0098BF;
+  opacity: 0.8;
+  position: absolute;
+  content: '';
+  width: 100%;
+  left: 0;
+  height: 100%;
+  top: 0;
+}
+/*# sourceMappingURL=homepage.css.map */

@@ -1,0 +1,12 @@
+.nav {
+    &_ul {
+        &-li {
+            &-a {
+                font-size: 1rem;
+                font-weight: 600;
+                color: #fff;
+                padding: 20px 36px;
+            }
+        }
+    }
+}
