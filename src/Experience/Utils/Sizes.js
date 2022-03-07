@@ -8,7 +8,7 @@ export default class Sizes extends EventEmitter
 
         // Setup
         this.width = window.innerWidth
-        this.height = window.innerHeight
+        this.height = 500
         this.pixelRatio = Math.min(window.devicePixelRatio, 2)
 
         // Resize event

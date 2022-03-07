@@ -56,7 +56,7 @@ module.exports = {
                 test: /\.(jpg|png|gif|svg)$/,
                 type: 'asset/resource',
                 generator: {
-                    filename: '/static/assets/images/[hash][ext]'
+                    filename: 'assets/images/[hash][ext]'
                 }
             },
 
@@ -65,7 +65,7 @@ module.exports = {
                 test: /\.(ttf|eot|woff|woff2)$/,
                 type: 'asset/resource',
                 generator: {
-                    filename: '/static/assets/fonts/[hash][ext]'
+                    filename: 'assets/fonts/[hash][ext]'
                 }
             },
             {
