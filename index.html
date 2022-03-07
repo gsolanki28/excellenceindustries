@@ -6,15 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/abstract/fonts.css">
-    <link rel="stylesheet" href="css/common/common.css">
-    <link rel="stylesheet" href="css/button/button.css">
-    <link rel="stylesheet" href="css/typography/typography.css">
-    <link rel="stylesheet" href="css/header/header.css">
-    <link rel="stylesheet" href="css/footer/footer.css">
-    <link rel="stylesheet" href="css/nav/nav.css">
-    <link rel="stylesheet" href="css/homepage/homepage.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -45,7 +37,7 @@
     <main>
         <section class="featured pr">
             <div class="featured_content">
-                <div class="featured_content-title">The Perfect Food <br /> Storage Solution.</div>
+                <h1 class="featured_content-title">The Perfect Food <br /> Storage Solution.</h1>
                 <p class="featured_content-p">For all you storage requirement.</p>
                 <a class="featured_content-a aic" href="">Find Out More
                     <svg class="featured_content-a-svg" width="35" height="35">
@@ -54,11 +46,14 @@
                 </a>
             </div>
         </section>
-        <div id="scrollContainer" class="pr">
+        <section class="product-3d">
+            <canvas id="product360"></canvas>
+        </section>
+        <!-- <div id="scrollContainer" class="pr">
             <section class="explore-wrap explore-wrap-1 pr h-screen">
                 <div class="container pr h-full w-full explore">
                     <div class="explore_content s-2-inner">
-                        <h1 class="explore_content-h1">Explore the features of the products</h1>
+                        <h2 class="explore_content-h2">Explore the features of the products</h2>
                         <p class="explore_content-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget
                             tellus
                             ante aliquam pellentesque lacusdolor.
@@ -72,7 +67,7 @@
                     <img class="explore-img max-w-50 type-2" src="assets/images/explore-2.png" alt="explore1">
                     <div class="container pr h-full w-full ">
                         <div class="explore_content type-2 s-2-inner">
-                            <h3 class="explore_content-h3">Dynamic Cooling</h3>
+                            <h4 class="explore_content-h4">Dynamic Cooling</h4>
                             <p class="explore_content-p">Hidden behind light-box for bigger inside capacity. Fast
                                 cooling. Even inside temperature.
                             </p>
@@ -91,7 +86,7 @@
                     <img class="explore-img max-w-50" src="assets/images/explore-3.png" alt="explore1">
                     <div class="container pr h-full w-full ">
                         <div class="explore_content s-2-inner">
-                            <h3 class="explore_content-h3">Heavy Duty Shelves</h3>
+                            <h4 class="explore_content-h4">Heavy Duty Shelves</h4>
                             <p class="explore_content-p">Adjustable for merchandising.
                                 30 kg Load endurance / shelf.
                             </p>
@@ -104,7 +99,7 @@
                     <img class="explore-img max-w-50 type-2" src="assets/images/explore-4.png" alt="explore1">
                     <div class="container pr h-full w-full ">
                         <div class="explore_content type-2 s-2-inner">
-                            <h3 class="explore_content-h3">Horizontal LED Light</h3>
+                            <h4 class="explore_content-h4">Horizontal LED Light</h4>
                             <p class="explore_content-p">Extra big and bright for attraction.
                                 Full illumination for each layer.
                             </p>
@@ -117,30 +112,133 @@
                     <img class="explore-img max-w-50" src="assets/images/explore-5.png" alt="explore1">
                     <div class="container pr h-full w-full ">
                         <div class="explore_content s-2-inner">
-                            <h3 class="explore_content-h3">Cold Wall Evaporator</h3>
+                            <h4 class="explore_content-h4">Cold Wall Evaporator</h4>
                             <p class="explore_content-p">Lorem ipsum dolor sit amet, consectetur adipiscing.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
-        <div class="abt-spt">
+        </div> -->
+        <section class="search container jsb">
+            <div class="search_title">
+                <p class="search_title-p">Quick Search</p>
+                <h4 class="search_title-h4">Let's find your Referigerator</h4>
+            </div>
+            <form class="search_form" action="">
+                <div class="pr dropdown-wrap">
+                    <div class="pr dropdown">
+                        Product Type
+                        <svg class="down-icon" width="14" height="8">
+                            <use xlink:href="assets/icons/icons.svg#downIcon" />
+                        </svg>
+                    </div>
+                    <div class="dropdown-menu">
+
+                    </div>
+                </div>
+                <div class="aic jsb">
+                    <input class="max48" type="text" placeholder="Price">
+                    <div class="pr dropdown-wrap max48">
+                        <div class="pr dropdown">
+                            Features
+                            <svg class="down-icon" width="14" height="8">
+                                <use xlink:href="assets/icons/icons.svg#downIcon" />
+                            </svg>
+                        </div>
+                        <div class="dropdown-menu">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pr dropdown-wrap">
+                    <div class="pr dropdown">
+                        Door Pattern
+                        <svg class="down-icon" width="14" height="8">
+                            <use xlink:href="assets/icons/icons.svg#downIcon" />
+                        </svg>
+                    </div>
+                    <div class="dropdown-menu">
+
+                    </div>
+                </div>
+                <div class="search_form-btn-wrap fc">
+                    <a class="search_form-btn-wrap-a" href="javascript:void(0)">Reset</a>
+                    <button class="btn btn-primary search_form-btn-wrap-btn">
+                        Find
+                    </button>
+                </div>
+            </form>
+            <img class="search_form-icon" width="64" src="/assets/images/fridge-icon-1.png" alt="fridge-icon-1">
+        </section>
+        <section class="seller">
             <div class="container">
-                <section class="about grid">
+                <h2 class="seller-h2">Bestseller Products</h2>
+                <div class="seller_p">
+                    <div class="seller_p-i">
+                        <img class="seller_p-i-img max-w-68" src="/assets/images/fridge-150.png" alt="fridge">
+                        <p class="seller_p-i-title">150 Litres, Top Mount Refrigerator</p>
+                        <p class="seller_p-i-s-no">RT34T4513S8</p>
+                        <p class="seller_p-i-specifications">
+                            $ 1000 <br />
+                            Top Mount <br />
+                            Super cool & super freeze <br />
+                            10 Years warrenty
+                        </p>
+                        <p class="seller_p-i-add fc">
+                            <input type="checkbox" name="" id="add-1">
+                            <label class="seller_p-i-add-label" for="add-1"> Add to compare</label>
+                        </p>
+                    </div>
+                    <div class="seller_p-i">
+                        <img class="seller_p-i-img max-w-91" src="/assets/images/fridge-324-t.png" alt="fridge">
+                        <p class="seller_p-i-title">150 Litres, Top Mount Refrigerator</p>
+                        <p class="seller_p-i-s-no">RT34T4513S8</p>
+                        <p class="seller_p-i-specifications">
+                            $ 1000 <br />
+                            Top Mount <br />
+                            Super cool & super freeze <br />
+                            10 Years warrenty
+                        </p>
+                        <p class="seller_p-i-add fc">
+                            <input type="checkbox" name="" id="add-1">
+                            <label class="seller_p-i-add-label" for="add-1"> Add to compare</label>
+                        </p>
+                    </div>
+                    <div class="seller_p-i">
+                        <img class="seller_p-i-img" src="/assets/images/fridge-324.png" alt="fridge">
+                        <p class="seller_p-i-title">150 Litres, Top Mount Refrigerator</p>
+                        <p class="seller_p-i-s-no">RT34T4513S8</p>
+                        <p class="seller_p-i-specifications">
+                            $ 1000 <br />
+                            Top Mount <br />
+                            Super cool & super freeze <br />
+                            10 Years warrenty
+                        </p>
+                        <p class="seller_p-i-add fc">
+                            <input type="checkbox" name="" id="add-1">
+                            <label class="seller_p-i-add-label" for="add-1"> Add to compare</label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="abt-spt">
+            <div class="container">
+                <div class="about grid">
                     <img src="assets/images/about-us.png" alt="about">
                     <div class="abt-spt_content">
-                        <h2 class="abt-spt_content-h2">About Us</h2>
+                        <h4 class="abt-spt_content-h4">About Us</h4>
                         <p class="abt-spt_content-p">
                             Excellence Industries is a national leader in commercial refrigeration for the food and food
                             service industries.
                         </p>
                         <button class="btn btn-primary">Read More</button>
                     </div>
-                </section>
-                <section class="support grid type-2">
+                </div>
+                <div class="support grid type-2">
                     <div class="abt-spt_content">
-                        <h2 class="abt-spt_content-h2">Service & Support</h2>
+                        <h4 class="abt-spt_content-h4">Service & Support</h4>
                         <p class="abt-spt_content-p">
                             Excellence Industries's robust service network across the country to provide hassle-free
                             solutions anytime, anywhere.
@@ -148,10 +246,20 @@
                         <button class="btn btn-primary">Read More</button>
                     </div>
                     <img src="assets/images/support.png" alt="support">
-                </section>
+                </div>
             </div>
-        </div>
-        <section class="contactus pr">
+        </section>
+        <section class="ar">
+            <div class="container">
+                <h3 class="ar-h3">Use AR to see your products in real world environment.</h3>
+                <p class="ar-p">Open this page using Safari on your iphone or ipad.</p>
+                <div class="ar_img-wrap">
+                    <img class="ar_img-wrap-img" src="/assets/images/ar-1.png" alt="use-ar">
+                    <img class="ar_img-wrap-icon" src="/assets/images/use-ar-icon.png" alt="use-ar">
+                </div>
+            </div>
+        </section>
+        <section class="contactus pr mb-0">
             <div class="container pr contactus_content text-center">
                 <p class="contactus-p">
                     Contact us today for a no-obligation discussion.
