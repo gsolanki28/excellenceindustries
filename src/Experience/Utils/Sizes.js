@@ -7,14 +7,14 @@ export default class Sizes extends EventEmitter
         super()
 
         // Setup
-        this.width = window.innerWidth
+        this.width = document.body.clientWidth
         this.height = 500
         this.pixelRatio = Math.min(window.devicePixelRatio, 2)
 
         // Resize event
         window.addEventListener('resize', () =>
         {
-            this.width = window.innerWidth
+            this.width = document.body.clientWidth
             this.height = window.innerHeight
             this.pixelRatio = Math.min(window.devicePixelRatio, 2)
 

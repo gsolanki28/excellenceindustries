@@ -245,6 +245,7 @@ section {
                 font-size: 14px;
                 color: #2156A6;
                 margin-top: 10px;
+
                 &-label {
                     margin-left: 8px;
                 }
@@ -281,5 +282,33 @@ section {
         left: 0;
         height: 100%;
         top: 0;
+    }
+}
+
+.ar {
+    background: #F6F6F6;
+    padding-top: 80px;
+
+    &-h3 {
+        line-height: 50px;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    &-p {
+        font-size: 21px;
+        line-height: 25px;
+        margin: 20px 0 40px;
+    }
+
+    &_img-wrap {
+        position: relative;
+
+        &-icon {
+            position: absolute;
+            bottom:60px;
+            right:0;
+        }
+
     }
 }
