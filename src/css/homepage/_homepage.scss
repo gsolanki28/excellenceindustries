@@ -46,14 +46,13 @@ section {
 }
 
 .explore {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 150px;
 
     &_content {
-        width: 35%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-
-        &-h1 {
+        margin-top: 70px;
+        &-h2 {
             text-transform: uppercase;
 
         }
@@ -63,8 +62,6 @@ section {
             font-size: 21px;
             line-height: 30px;
         }
-
-        &-h3 {}
 
         &-span {
             font-weight: 600;
@@ -80,26 +77,9 @@ section {
     }
 
     &-img {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        max-width: 548px;
-        right: 0;
 
         &.max-w-50 {
             max-width: 50%;
-        }
-    }
-
-    .type-2 {
-        &.explore-img {
-            right: auto;
-            left: 0;
-        }
-
-        &.explore_content {
-            left: auto;
-            right: 0;
         }
     }
 }
@@ -304,10 +284,15 @@ section {
     &_img-wrap {
         position: relative;
 
+        &-img{
+            max-width: 30%;
+        }
+
         &-icon {
             position: absolute;
-            bottom:60px;
-            right:0;
+            bottom: 60px;
+            right: 18%;
+            max-width: 10%;
         }
 
     }
