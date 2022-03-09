@@ -22,5 +22,12 @@
                 <rect width="60" height="34.9091" fill="white"/>
             </clipPath>
         </defs>
-    </svg>
+    </symbol>
+    <symbol id="hotspotIcon" width="23" height="23" viewBox="0 0 23 23" fill="none">
+        <circle opacity="0.15" r="10.9648" transform="matrix(-1 0 0 1 11.4648 11.4648)" fill="#FD0000" stroke="#D44D4D"/>
+        <g opacity="0.4">
+            <circle r="5" transform="matrix(-1 0 0 1 11.0312 11.4531)" fill="#FD0000"/>
+            <circle r="4.5" transform="matrix(-1 0 0 1 11.0312 11.4531)" stroke="#FD0000" stroke-opacity="0.79"/>
+        </g>
+    </symbol>
 </svg>
