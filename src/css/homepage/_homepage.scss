@@ -99,6 +99,30 @@ section {
             max-width: 50%;
         }
     }
+
+    &-hotspot {
+        position: absolute;
+
+        &.hotspot-1 {
+            top: 18%;
+            right: 30%;
+        }
+
+        &.hotspot-2 {
+            left: 39%;
+            top: 23%;
+        }
+
+        &.hotspot-3 {
+            right: 34%;
+            top: 28%;
+        }
+
+        &.hotspot-4 {
+            left: 19%;
+            top: 12%;
+        }
+    }
 }
 
 .slider-container {
@@ -234,31 +258,40 @@ section {
     animation-name: FadeIn;
     animation-duration: 3s;
     transition-timing-function: linear;
-  }
-  
-  @keyframes FadeIn {
+}
+
+@keyframes FadeIn {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  @-moz-keyframes FadeIn {
+}
+
+@-moz-keyframes FadeIn {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  @-webkit-keyframes FadeIn {
+}
+
+@-webkit-keyframes FadeIn {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
+
+
+
+body {
+    overflow-x: hidden;
+}
