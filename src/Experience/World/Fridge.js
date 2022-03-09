@@ -28,7 +28,7 @@ export default class Fridge {
     setModel() {
         this.model = this.resource.scene;
         this.model.scale.set(2.25, 2.25, 2.25);
-        this.model.position.set(0, 0, 0);
+        this.model.position.set(0, -0.9, 0);
         this.scene.add(this.model)
 
         this.model.traverse((child) => {
