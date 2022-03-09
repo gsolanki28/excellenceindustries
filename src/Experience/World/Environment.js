@@ -17,25 +17,83 @@ export default class Environment
         }
 
         this.setAmbientLight();
-        this.setSunLight()
-        //this.setEnvironmentMap()
+        this.setSunLight();
+        //this.scene.background = new THREE.Color( 0xcccccc );
     }
 
     setAmbientLight() {
-        this.ambientlight = new THREE.AmbientLight(0xffffff);
-        this.scene.add(this.ambientlight);
+        // this.ambientlight = new THREE.AmbientLight(0xffffff, 0.3);
+        // this.scene.add(this.ambientlight);
     }
 
     setSunLight()
     {
-        this.sunLight = new THREE.DirectionalLight(0xffffff)
+        //for top
+        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.2 * Math.PI)
         this.sunLight.castShadow = true;
-        this.sunLight.position.set(2, 8, 4);
+        this.sunLight.position.set(-8, -8, -8);
         this.scene.add(this.sunLight)
-        // const directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2);
+        // let directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'brown');
+        
         // this.scene.add(directionalLightHelper);
-        // const sunLightCameraHelper = new THREE.CameraHelper(this.sunLight.shadow.camera);
-        // this.scene.add(sunLightCameraHelper);
+
+        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.2 * Math.PI)
+        this.sunLight.castShadow = true;
+        this.sunLight.position.set(8, -8, -8);
+        this.scene.add(this.sunLight)
+        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'orange');
+        
+        // this.scene.add(directionalLightHelper);
+
+        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.5 * Math.PI)
+        this.sunLight.castShadow = true;
+        this.sunLight.position.set(8, 8, -8);
+        this.scene.add(this.sunLight)
+        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'pink');
+        
+        // this.scene.add(directionalLightHelper);
+
+        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.3 * Math.PI)
+        this.sunLight.castShadow = true;
+        this.sunLight.position.set(8, 8, 8);
+        this.scene.add(this.sunLight)
+        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'green');
+        
+        // this.scene.add(directionalLightHelper);
+
+
+        //from bottom
+        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.3 * Math.PI)
+        this.sunLight.castShadow = true;
+        this.sunLight.position.set(-8, 8, 8);
+        this.scene.add(this.sunLight)
+        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'blue');
+        
+        // this.scene.add(directionalLightHelper);
+
+        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.2 * Math.PI)
+        this.sunLight.castShadow = true;
+        this.sunLight.position.set(-8, -8, 8);
+        this.scene.add(this.sunLight)
+        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'red');
+        
+        // this.scene.add(directionalLightHelper);
+
+        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.5 * Math.PI)
+        this.sunLight.castShadow = true;
+        this.sunLight.position.set(-8, 8, -8);
+        this.scene.add(this.sunLight)
+        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'yellow');
+        
+        // this.scene.add(directionalLightHelper);
+
+        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.2 * Math.PI)
+        this.sunLight.castShadow = true;
+        this.sunLight.position.set(8, -8, 8);
+        this.scene.add(this.sunLight)
+        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'black');
+        
+        // this.scene.add(directionalLightHelper);
 
         // Debug
         if(this.debug.active)

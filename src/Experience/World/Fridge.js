@@ -1,5 +1,7 @@
 import * as THREE from 'three'
-import { MeshStandardMaterial } from 'three';
+import {
+    MeshStandardMaterial
+} from 'three';
 import Experience from '../Experience.js'
 import gsap from "gsap"
 
@@ -35,12 +37,14 @@ export default class Fridge {
             if (child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial) {
                 this.objects.push(child);
                 if (child.isMesh) {
-                    child.castShadow = true;
-                }
-                if (child.name == "SM_LowerBody_1" || child.name == "SM_LowerBody_2" || child.name == "SM_LowerBody_3") {
-                    child.material.metalness = 0.4
+                    child.receiveShadow = true;
+
+                    if (child.name == "SM_LowerBody_1" || child.name == "SM_LowerBody_2" || child.name == "SM_LowerBody_3") {
+                        child.material.metalness = 0.4
+                    }
                 }
             }
+            document.getElementById('loader').style.display = 'none';
         })
     }
 
@@ -97,8 +101,7 @@ export default class Fridge {
     }
 
     click() {
-        if(this.experience.currentIntersect)
-        {
+        if (this.experience.currentIntersect) {
             // if(this.experience.currentIntersect.object.name !== 'SM_Water')
             //     this.moveToSelectedObject(this.experience.currentIntersect.object, 1, 1)
         }
