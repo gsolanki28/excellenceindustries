@@ -9,33 +9,33 @@
 </head>
 
 <body>
-    <header class="header pr aic jsb">
-        <a href="" class="header_logo">
-            <img class="header_logo-img" src="/static/assets/images/logo-white.png" alt="logo">
-        </a>
-        <nav class="header_nav">
-            <ul class="nav_ul aic">
-                <li class="nav_ul-li">
-                    <a class="nav_ul-li-a block" href="">HOME</a>
-                </li>
-                <li class="nav_ul-li">
-                    <a class="nav_ul-li-a block" href="">ABOUT US</a>
-                </li>
-                <li class="nav_ul-li">
-                    <a class="nav_ul-li-a block" href="">SERVICES</a>
-                </li>
-                <li class="nav_ul-li">
-                    <a class="nav_ul-li-a block" href="">CONTACT US</a>
-                </li>
-                <li class="nav_ul-li">
-                    <a class="block btn btn-secondary" href="">ORDER NOW</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div id="scrollSnap">
+        <header class="header pr aic jsb">
+            <a href="" class="header_logo">
+                <img class="header_logo-img" src="/static/assets/images/logo-white.png" alt="logo">
+            </a>
+            <nav class="header_nav">
+                <ul class="nav_ul aic">
+                    <li class="nav_ul-li">
+                        <a class="nav_ul-li-a block" href="">HOME</a>
+                    </li>
+                    <li class="nav_ul-li">
+                        <a class="nav_ul-li-a block" href="">ABOUT US</a>
+                    </li>
+                    <li class="nav_ul-li">
+                        <a class="nav_ul-li-a block" href="">SERVICES</a>
+                    </li>
+                    <li class="nav_ul-li">
+                        <a class="nav_ul-li-a block" href="">CONTACT US</a>
+                    </li>
+                    <li class="nav_ul-li">
+                        <a class="block btn btn-secondary" href="">ORDER NOW</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <section class="featured mb-0 pr">
-            <video src="/static/assets/videos/vb5.mp4" width="100%" height="100%" autoplay muted loop></video>
+            <video src="/static/assets/videos/VB5-4.mp4" width="100%" height="100%" autoplay muted loop></video>
             <!-- <div class="featured_content">
                 <h1 class="featured_content-title">The Perfect Food <br /> Storage Solution.</h1>
                 <p class="featured_content-p">For all you storage requirement.</p>
@@ -68,121 +68,141 @@
                     </p>
                 </div>
                 <div class="pr">
-                    <svg class="explore-hotspot hotspot-1" width="23" height="23">
-                        <use data-target="slide-1" data-type="type-1"
-                            xlink:href="/static/assets/icons/icons.svg#hotspotIcon" />
-                    </svg>
-                    <svg class="explore-hotspot hotspot-2" width="23" height="23">
-                        <use data-target="slide-2" data-type="type-2"
-                            xlink:href="/static/assets/icons/icons.svg#hotspotIcon" />
-                    </svg>
-                    <svg class="explore-hotspot hotspot-3" width="23" height="23">
-                        <use data-target="slide-3" data-type="type-1"
-                            xlink:href="/static/assets/icons/icons.svg#hotspotIcon" />
-                    </svg>
-                    <svg class="explore-hotspot hotspot-4" width="23" height="23">
-                        <use data-target="slide-4" data-type="type-2"
-                            xlink:href="/static/assets/icons/icons.svg#hotspotIcon" />
-                    </svg>
+                    <a class="explore-hotspot hotspot-1" href="#slide-1">
+                        <svg width="23" height="23">
+                            <use data-target="slide-1" xlink:href="/static/assets/icons/icons.svg#hotspotIcon" />
+                        </svg>
+                    </a>
+                    <a class="explore-hotspot hotspot-2" href="#slide-2">
+                        <svg width="23" height="23">
+                            <use data-target="slide-2" xlink:href="/static/assets/icons/icons.svg#hotspotIcon" />
+                        </svg>
+                    </a>
+                    <a class="explore-hotspot hotspot-3" href="#slide-3">
+                        <svg width="23" height="23">
+                            <use data-target="slide-3" xlink:href="/static/assets/icons/icons.svg#hotspotIcon" />
+                        </svg>
+                    </a>
+                    <a class="explore-hotspot hotspot-4" href="#slide-4">
+                        <svg width="23" height="23">
+                            <use data-target="slide-4" xlink:href="/static/assets/icons/icons.svg#hotspotIcon" />
+                        </svg>
+                    </a>
                     <img class="explore-img" src="/static/assets/images/explore.png" alt="explore1">
                 </div>
             </div>
         </section>
-        <section id="sliderContainer" class="slider-container m-0">
-            <ul class="slider">
-                <li data-id="slide-1" class="slide active">
-                    <div class="explore">
-                        <div class="pr">
-                            <div class="slide-hotspot hotspot-1">
-                                <svg width="73" height="73">
-                                    <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
-                                </svg>
-                            </div>
-                            <img class="explore-img" src="/static/assets/images/explore-1.png" alt="explore1" />
-                        </div>
-                        <div class="container pr">
-                            <div class="explore_content">
-                                <h4 class="explore_content-h4">Dynamic Cooling</h4>
-                                <p class="explore_content-p">Hidden behind light-box for bigger inside capacity.
-                                    Fast
-                                    cooling. Even inside temperature.
-                                </p>
-                                <span class="aic explore_content-span">
-                                    <svg class="explore_content-span-svg" width="23" height="26">
-                                        <use xlink:href="/static/assets/icons/icons.svg#tempIcon" />
-                                    </svg>
-                                    4&#8451; to -24&#8451;
-                                </span>
-                            </div>
-                        </div>
+        <section id="slide-1" class="slide aic">
+            <div class="explore">
+                <div class="pr">
+                    <div class="slide-hotspot hotspot-1">
+                        <svg width="73" height="73">
+                            <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
+                        </svg>
                     </div>
-                </li>
-                <li data-id="slide-2" class="slide">
-                    <div class="explore">
-                        <div class="container pr">
-                            <div class="explore_content">
-                                <h4 class="explore_content-h4">Heavy Duty Shelves</h4>
-                                <p class="explore_content-p">Adjustable for merchandising.
-                                    30 kg Load endurance / shelf.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="pr">
-                            <div class="slide-hotspot hotspot-2">
-                                <svg width="73" height="73">
-                                    <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
-                                </svg>
-                            </div>
-                            <img class="explore-img" src="/static/assets/images/explore-2.png" alt="explore1" />
-                        </div>
+                    <img class="explore-img" src="/static/assets/images/explore-1.png" alt="explore1" />
+                </div>
+                <div class="container pr">
+                    <div class="explore_content">
+                        <h4 class="explore_content-h4">Dynamic Cooling</h4>
+                        <p class="explore_content-p">Hidden behind light-box for bigger inside capacity.
+                            Fast
+                            cooling. Even inside temperature.
+                        </p>
+                        <span class="aic explore_content-span">
+                            <svg class="explore_content-span-svg" width="23" height="26">
+                                <use xlink:href="/static/assets/icons/icons.svg#tempIcon" />
+                            </svg>
+                            4 C to -24 C
+                        </span>
                     </div>
-                </li>
-                <li data-id="slide-3" class="slide">
-                    <div class="explore">
-                        <div class="pr">
-                            <div class="slide-hotspot hotspot-3">
-                                <svg width="73" height="73">
-                                    <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
-                                </svg>
-                            </div>
-                            <img class="explore-img" src="/static/assets/images/explore-3.png" alt="explore1" />
-                        </div>
-                        <div class="container pr">
-                            <div class="explore_content">
-                                <h4 class=" explore_content-h4">Horizontal LED Light</h4>
-                                <p class="explore_content-p">Extra big and bright for attraction.
-                                    Full illumination for each layer.
-                                </p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="slider-indicators fc">
+                <a class="indicator slide-1 active" href="#slide-1"></a>
+                <a class="indicator slide-2" href="#slide-2"></a>
+                <a class="indicator slide-3" href="#slide-3"></a>
+                <a class="indicator slide-4" href="#slide-4"></a>
+            </div>
+        </section>
+        <section id="slide-2" class="slide aic">
+            <div class="explore">
+                <div class="pr">
+                    <div class="slide-hotspot hotspot-2">
+                        <svg width="73" height="73">
+                            <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
+                        </svg>
                     </div>
-                </li>
-                <li data-id="slide-4" class="slide">
-                    <div class="explore">
-                        <div class="container pr">
-                            <div class="explore_content s-2-inner">
-                                <h4 class="explore_content-h4">Cold Wall Evaporator</h4>
-                                <p class="explore_content-p">Lorem ipsum dolor sit amet, consectetur adipiscing.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="pr">
-                            <div class="slide-hotspot hotspot-4">
-                                <svg width="73" height="73">
-                                    <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
-                                </svg>
-                            </div>
-                            <img class="explore-img" src="/static/assets/images/explore-4.png" alt="explore1" />
-                        </div>
+                    <img class="explore-img reverse" src="/static/assets/images/explore-2.png" alt="explore1" />
+                </div>
+                <div class="container pr">
+                    <div class="explore_content">
+                        <h4 class="explore_content-h4">Heavy Duty Shelves</h4>
+                        <p class="explore_content-p">Adjustable for merchandising.
+                            30 kg Load endurance / shelf.
+                        </p>
                     </div>
-                </li>
-            </ul>
-            <ul class="slider-indicators">
-                <li data-target="slide-1" data-type="type-1" class="indicator slide-1 active"></li>
-                <li data-target="slide-2" data-type="type-2" class="indicator slide-2"></li>
-                <li data-target="slide-3" data-type="type-1" class="indicator slide-3"></li>
-                <li data-target="slide-4" data-type="type-2" class="indicator slide-4"></li>
-            </ul>
+                </div>
+            </div>
+            <div class="slider-indicators fc">
+                <a class="indicator slide-1" href="#slide-1"></a>
+                <a class="indicator slide-2 active" href="#slide-2"></a>
+                <a class="indicator slide-3" href="#slide-3"></a>
+                <a class="indicator slide-4" href="#slide-4"></a>
+            </div>
+        </section>
+        <section id="slide-3" class="slide aic">
+            <div class="explore">
+                <div class="pr">
+                    <div class="slide-hotspot hotspot-3">
+                        <svg width="73" height="73">
+                            <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
+                        </svg>
+                    </div>
+                    <img class="explore-img" src="/static/assets/images/explore-3.png" alt="explore1" />
+                </div>
+                <div class="container pr">
+                    <div class="explore_content">
+                        <h4 class=" explore_content-h4">Horizontal LED Light</h4>
+                        <p class="explore_content-p">Extra big and bright for attraction.
+                            Full illumination for each layer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-indicators fc">
+                <a class="indicator slide-1" href="#slide-1"></a>
+                <a class="indicator slide-2" href="#slide-2"></a>
+                <a class="indicator slide-3 active" href="#slide-3"></a>
+                <a class="indicator slide-4" href="#slide-4"></a>
+            </div>
+        </section>
+        <section id="slide-4" class="slide aic">
+            <div class="explore">
+                <div class="pr">
+                    <div class="slide-hotspot hotspot-4">
+                        <svg width="73" height="73">
+                            <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
+                        </svg>
+                    </div>
+                    <img class="explore-img reverse" src="/static/assets/images/explore-4.png" alt="explore1" />
+                </div>
+                <div class="container pr">
+                    <div class="explore_content s-2-inner">
+                        <h4 class="explore_content-h4">Cold Wall Evaporator</h4>
+                        <p class="explore_content-p">Lorem ipsum dolor sit amet, consectetur adipiscing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-indicators fc">
+                <a class="indicator slide-1" href="#slide-1"></a>
+                <a class="indicator slide-2" href="#slide-2"></a>
+                <a class="indicator slide-3" href="#slide-3"></a>
+                <a class="indicator slide-4 active" href="#slide-4"></a>
+            </div>
+            </li>
+        </section>
         </section>
         <footer class="footer">
             <div class="footer-padding">
@@ -229,7 +249,7 @@
                 Copyright © 2022 Excellence Industries. All rights reserved.
             </div>
         </footer>
-    </main>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
