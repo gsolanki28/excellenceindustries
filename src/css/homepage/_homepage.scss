@@ -74,6 +74,7 @@ section {
     grid-gap: 150px;
 
     &_content {
+        margin-top: 15%;
 
         &-h2 {
             text-transform: uppercase;
@@ -152,17 +153,97 @@ section {
 
         &.active {
             opacity: 1;
+            z-index: 1;
         }
 
         &[data-id="slide-1"] {
             .explore {
                 grid-gap: 50px;
+
+                &_content {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &[data-id="slide-2"] {
+            .explore {
+                &_content {
+                    margin-top: 25%;
+                }
             }
         }
 
         &[data-id="slide-3"] {
             .explore {
                 grid-gap: 0;
+
+                &_content {
+                    margin-top: 13%;
+                }
+            }
+        }
+
+        &[data-id="slide-4"] {
+            .explore {
+                &_content {
+                    margin-top: 26%;
+                }
+            }
+        }
+
+        &-hotspot {
+            position: absolute;
+
+            &:before {
+                content: '';
+                height: 2px;
+                width: 25vw;
+                background-color: #fd000066;
+                position: absolute;
+            }
+
+            &.hotspot-1 {
+                left: 60%;
+                top: -1%;
+
+                &::before {
+                    top: 35px;
+                    left: 35px;
+                }
+            }
+
+            &.hotspot-2 {
+                right: 79%;
+                top: 15%;
+
+                &:before {
+                    width: 22vw;
+                    top: 35px;
+                    right: 35px;
+                }
+            }
+
+            &.hotspot-3 {
+                left: 42%;
+                top: 7%;
+
+                &::before {
+                    top: 35px;
+                    left: 35px;
+                    width: 35vw;
+                }
+            }
+
+            &.hotspot-4 {
+                right: 60%;
+                top: 15%;
+
+                &::before {
+                    top: 35px;
+                    right: 35px;
+                    width: 32vw;
+                }
             }
         }
     }
