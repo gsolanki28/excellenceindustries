@@ -8,7 +8,7 @@ export default class Sizes extends EventEmitter
 
         // Setup
         this.width = document.body.clientWidth
-        this.height = 500
+        this.height = 600
         this.pixelRatio = Math.min(window.devicePixelRatio, 2)
 
         // Resize event

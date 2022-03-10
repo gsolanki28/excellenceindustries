@@ -38,6 +38,9 @@ export default class Resources extends EventEmitter
                     (file) =>
                     {
                         this.sourceLoaded(source, file)
+                    },
+                    function(xhr){
+                        //document.getElementById( 'loader' ).style.display = 'none';
                     }
                 )
             }
