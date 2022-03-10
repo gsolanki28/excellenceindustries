@@ -8,6 +8,10 @@ section {
     &.mt-0 {
         margin-top: 0;
     }
+
+    &.m-0{
+        margin: 0;
+    }
 }
 
 .product-3d {
@@ -102,23 +106,24 @@ section {
 
     &-hotspot {
         position: absolute;
+        cursor: pointer;
 
         &.hotspot-1 {
             top: 18%;
             right: 30%;
         }
 
-        &.hotspot-2 {
+        &.hotspot-4 {
             left: 39%;
             top: 23%;
         }
 
-        &.hotspot-3 {
+        &.hotspot-2 {
             right: 34%;
             top: 28%;
         }
 
-        &.hotspot-4 {
+        &.hotspot-3 {
             left: 19%;
             top: 12%;
         }
@@ -252,8 +257,6 @@ section {
     }
 }
 
-
-
 .slide.active {
     animation-name: FadeIn;
     animation-duration: 3s;
@@ -289,8 +292,6 @@ section {
         opacity: 1;
     }
 }
-
-
 
 body {
     overflow-x: hidden;
