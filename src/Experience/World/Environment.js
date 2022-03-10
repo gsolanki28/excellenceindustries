@@ -1,5 +1,6 @@
 import * as THREE from 'three'
 import Experience from '../Experience.js'
+import { addAmbientLight, addDirectionalLight, addPointLight } from '../Utils/three-helper.js';
 
 export default class Environment
 {
@@ -22,78 +23,16 @@ export default class Environment
     }
 
     setAmbientLight() {
-        // this.ambientlight = new THREE.AmbientLight(0xffffff, 0.3);
-        // this.scene.add(this.ambientlight);
+        this.scene.add(addAmbientLight(0xffffff, 1.3));
     }
 
     setSunLight()
     {
-        //for top
-        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.2 * Math.PI)
-        this.sunLight.castShadow = true;
-        this.sunLight.position.set(-8, -8, -8);
-        this.scene.add(this.sunLight)
-        // let directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'brown');
+        //Add point light in top
+        this.scene.add(addPointLight(0xffffff, .6, {x:0, y:8, z:0}, {}, true));
         
-        // this.scene.add(directionalLightHelper);
-
-        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.2 * Math.PI)
-        this.sunLight.castShadow = true;
-        this.sunLight.position.set(8, -8, -8);
-        this.scene.add(this.sunLight)
-        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'orange');
-        
-        // this.scene.add(directionalLightHelper);
-
-        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.5 * Math.PI)
-        this.sunLight.castShadow = true;
-        this.sunLight.position.set(8, 8, -8);
-        this.scene.add(this.sunLight)
-        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'pink');
-        
-        // this.scene.add(directionalLightHelper);
-
-        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.3 * Math.PI)
-        this.sunLight.castShadow = true;
-        this.sunLight.position.set(8, 8, 8);
-        this.scene.add(this.sunLight)
-        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'green');
-        
-        // this.scene.add(directionalLightHelper);
-
-
-        //from bottom
-        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.3 * Math.PI)
-        this.sunLight.castShadow = true;
-        this.sunLight.position.set(-8, 8, 8);
-        this.scene.add(this.sunLight)
-        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'blue');
-        
-        // this.scene.add(directionalLightHelper);
-
-        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.2 * Math.PI)
-        this.sunLight.castShadow = true;
-        this.sunLight.position.set(-8, -8, 8);
-        this.scene.add(this.sunLight)
-        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'red');
-        
-        // this.scene.add(directionalLightHelper);
-
-        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.5 * Math.PI)
-        this.sunLight.castShadow = true;
-        this.sunLight.position.set(-8, 8, -8);
-        this.scene.add(this.sunLight)
-        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'yellow');
-        
-        // this.scene.add(directionalLightHelper);
-
-        this.sunLight = new THREE.DirectionalLight(0xffffff,  0.2 * Math.PI)
-        this.sunLight.castShadow = true;
-        this.sunLight.position.set(8, -8, 8);
-        this.scene.add(this.sunLight)
-        // directionalLightHelper = new THREE.DirectionalLightHelper(this.sunLight, 0.2, 'black');
-        
-        // this.scene.add(directionalLightHelper);
+        //Add directional light
+        this.scene.add(addDirectionalLight(0xeeeee3, 2, {x:8,y:8,z:8},{},true));        
 
         // Debug
         if(this.debug.active)

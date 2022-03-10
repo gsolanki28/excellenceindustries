@@ -4,6 +4,7 @@ import {
 } from 'three';
 import Experience from '../Experience.js'
 import gsap from "gsap"
+import { addPointLight, setColor, setMetalNess, setRoughNess } from '../Utils/three-helper.js';
 
 export default class Fridge {
     constructor() {
@@ -34,19 +35,44 @@ export default class Fridge {
         this.scene.add(this.model)
 
         this.model.traverse((child) => {
+            console.log(child);
             if (child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial) {
                 this.objects.push(child);
                 if (child.isMesh) {
                     child.receiveShadow = true;
 
-                    if (child.name == "SM_LowerBody_1" || child.name == "SM_LowerBody_2" || child.name == "SM_LowerBody_3") {
-                        child.material.metalness = 0.4
+                    if (child.name == "SM_LowerBody_1") {
+                        setMetalNess(child, 0.2);
+                        setRoughNess(child, 0.3);
+                        setColor(child, 0xffffff);
+                    }
+                    if (child.name == "SM_Cover") {
+                        setMetalNess(child, 0.1);
+                        setRoughNess(child, 0.2);
+                        setColor(child, 0x494949);
+                    }
+                    if (child.name == "SM_Logo" || (child.name.indexOf("Food_box_") > -1)) {
+                        setMetalNess(child, 0);
+                        setRoughNess(child, 0.9);
+                    }
+                    if (child.name == "Mesh009") {
+                        var position = new THREE.Box3().setFromObject(child);
+                        var center = position.getCenter(new THREE.Vector3());
+
+                        this.scene.add(addPointLight(0xffffff, 1, {x:center.x, y:center.y, z: center.y}));
+                    }
+                    if (child.name == "SM_Glass_1") {
+                        setMetalNess(child, 0);
+                        setRoughNess(child, 0);
+                        setColor(child, 0xffffff);
                     }
                 }
             }
             document.getElementById('loader').style.display = 'none';
         })
     }
+
+    
 
     // setAnimation() {
     //     this.animation = {}
