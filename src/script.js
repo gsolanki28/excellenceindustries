@@ -36,6 +36,7 @@ slideIndicator.forEach((indicator) => {
 
 hotSpotIndicator.forEach((hotspot) => {
     hotspot.addEventListener('click', (e) => {
+        slideContainer.scrollIntoView();
         sliderFunction(e);
     })
 })

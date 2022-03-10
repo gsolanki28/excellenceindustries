@@ -1,7 +1,8 @@
 import * as THREE from 'three';
 import Experience from './Experience';
 
-export default class Renderer{
+export default class 
+Renderer{
     constructor(){
         this.experience = new Experience();
         this.canvas = this.experience.canvas;
@@ -22,7 +23,8 @@ export default class Renderer{
         this.instance.toneMappingExposure = 2.3;
         this.instance.setSize(this.sizes.width, this.sizes.height)
         this.instance.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-        this.instance.setClearColor(0xe9eaed);
+        //this.instance.setClearColor(0xe9eaed);
+        this.instance.setClearColor(0xffffff);
         this.instance.shadowMap.enabled = true;
         this.instance.shadowMap.type = THREE.PCFSoftShadowMap;
     }

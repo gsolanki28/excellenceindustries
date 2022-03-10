@@ -15,8 +15,9 @@ section {
 }
 
 .product-3d {
+    margin-top: 20px;
     &-svg {
-        margin-top: 32px;
+        // margin-top: 32px;
     }
 }
 
@@ -131,6 +132,7 @@ section {
 }
 
 .slider-container {
+    padding: 95px 0;
     padding-right: 100px;
     position: relative;
 
