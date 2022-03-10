@@ -36,7 +36,7 @@ slideIndicator.forEach((indicator) => {
 
 hotSpotIndicator.forEach((hotspot) => {
     hotspot.addEventListener('click', (e) => {
-        slideContainer.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+        slideContainer.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         sliderFunction(e);
     })
 })
