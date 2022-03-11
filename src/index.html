@@ -34,7 +34,7 @@
                 </ul>
             </nav>
         </header>
-        <section class="featured mb-0 pr">
+        <section class="featured h-screen mb-0 pr">
             <video src="/static/assets/videos/VB5-4.mp4" width="100%" height="100%" autoplay muted loop></video>
             <!-- <div class="featured_content">
                 <h1 class="featured_content-title">The Perfect Food <br /> Storage Solution.</h1>
@@ -45,13 +45,13 @@
                     </svg>
                 </a>
             </div> -->
-            <div class="scroll-downs">
+            <a href="#product3d" class="scroll-downs">
                 <div class="mousey">
                     <div class="scroller"></div>
                 </div>
-            </div>
+            </a>
         </section>
-        <section class="product-3d m-0 pr text-center">
+        <section id="product3d" class="product-3d m-0 pr text-center">
             <div id="loader"></div>
             <canvas id="product360" width="700"></canvas>
             <svg class="product-3d-svg" width="60" height="35">
@@ -113,7 +113,20 @@
                             <svg class="explore_content-span-svg" width="23" height="26">
                                 <use xlink:href="/static/assets/icons/icons.svg#tempIcon" />
                             </svg>
-                            4 C to -24 C
+                            <span class="pr degree">
+                                4 <svg class="degree-icon" width="7" height="8">
+                                    <use xlink:href="/static/assets/icons/icons.svg#degreeIcon" />
+                                </svg>
+                            </span>
+                            C
+                            to
+                            <span class="pr degree">
+                                -24
+                                <svg class="degree-icon" width="7" height="8">
+                                    <use xlink:href="/static/assets/icons/icons.svg#degreeIcon" />
+                                </svg>
+                            </span>
+                            C
                         </span>
                     </div>
                 </div>

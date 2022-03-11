@@ -17,7 +17,6 @@ footer {
 }
 
 section {
-    min-height: 100vh;
     scroll-snap-align: start;
 
     &.mb-0 {
@@ -31,6 +30,9 @@ section {
     &.m-0 {
         margin: 0;
     }
+}
+
+#exploreDiv {
 }
 
 .product-3d {
@@ -87,6 +89,16 @@ section {
                 margin-right: 30px;
             }
         }
+
+        .degree {
+            padding-right: 7px;
+
+            &-icon {
+                position: absolute;
+                right: 0;
+                top: 2px;
+            }
+        }
     }
 
     &-img {
@@ -135,7 +147,7 @@ section {
 .slide {
     position: relative;
     margin-left: -180px;
-    min-height: 100%;
+    min-height: 100vh;
     opacity: 1;
 
     .explore {
@@ -147,7 +159,7 @@ section {
             grid-gap: 50px;
 
             &_content {
-                margin-top: 0;
+                margin-top: 4%;
             }
         }
     }
@@ -155,7 +167,7 @@ section {
     &#slide-2 {
         .explore {
             &_content {
-                margin-top: 25%;
+                margin-top: 29%;
             }
         }
     }
@@ -165,7 +177,7 @@ section {
             grid-gap: 0;
 
             &_content {
-                margin-top: 13%;
+                margin-top: 16%;
             }
         }
     }
@@ -173,7 +185,7 @@ section {
     &#slide-4 {
         .explore {
             &_content {
-                margin-top: 26%;
+                margin-top: 30%;
             }
         }
     }
