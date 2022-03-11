@@ -32,8 +32,7 @@ section {
     }
 }
 
-#exploreDiv {
-}
+#exploreDiv {}
 
 .product-3d {
     margin-top: 20px;
@@ -65,7 +64,8 @@ section {
     padding: 50px 0;
 
     &_content {
-        margin-top: 15%;
+        top: 15%;
+        position: relative;
 
         &-h2 {
             text-transform: uppercase;
@@ -147,11 +147,13 @@ section {
 .slide {
     position: relative;
     margin-left: -180px;
-    min-height: 100vh;
+    height: 100vh;
     opacity: 1;
 
     .explore {
         grid-template-columns: 2fr 1fr;
+        height: 100%;
+        overflow: hidden;
     }
 
     &#slide-1 {
@@ -159,7 +161,7 @@ section {
             grid-gap: 50px;
 
             &_content {
-                margin-top: 4%;
+                top: 2%;
             }
         }
     }
@@ -167,7 +169,7 @@ section {
     &#slide-2 {
         .explore {
             &_content {
-                margin-top: 29%;
+                top: 18%;
             }
         }
     }
@@ -177,7 +179,7 @@ section {
             grid-gap: 0;
 
             &_content {
-                margin-top: 16%;
+                top: 10%;
             }
         }
     }
@@ -185,7 +187,7 @@ section {
     &#slide-4 {
         .explore {
             &_content {
-                margin-top: 30%;
+                top: 18%;
             }
         }
     }
