@@ -119,7 +119,8 @@ var splide = new Splide('.splide', {
     height: '100vh',
     wheel: true,
     waitForTransition: true,
-    releaseWheel: true
+    releaseWheel: true,
+    speed: 1000
 });
 
 splide.mount();
@@ -131,3 +132,6 @@ hotSpotIndicator.forEach((hotspot) => {
         splide.Components.Move.jump(dataId);
     })
 })
+
+
+
