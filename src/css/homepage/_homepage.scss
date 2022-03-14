@@ -437,6 +437,7 @@ section {
         right: 50px;
         width: 16px;
         height: 160px;
+        z-index: 2;
 
         @include tab {
             top: auto;
