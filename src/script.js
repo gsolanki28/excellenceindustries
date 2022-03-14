@@ -7,7 +7,7 @@ import Experience from './Experience/Experience.js'
 // const experience = new Experience(document.querySelector('canvas#product360'));
 const slideIndicator = document.querySelectorAll('.indicator');
 const allSlides = document.querySelectorAll('.slide');
-const sliderContainer = document.querySelector('.slider-container');
+const sliderContainer = document.querySelector('#sliderContainer');
 const hotSpotIndicator = document.querySelectorAll('.explore-hotspot');
 const scrollSnap = document.querySelector('#scrollSnap');
 let scrollSlider = false;
@@ -113,10 +113,21 @@ let scrollSlider = false;
 //     sectionClass: 'slide1'
 // })
 
-var splide = new Splide( '.splide', {
+var splide = new Splide('.splide', {
+    type: 'fade',
     direction: 'ttb',
-    height   : '10rem',
-    wheel    : true,
-  } );
-  
-  splide.mount();
+    height: '100vh',
+    wheel: true,
+    waitForTransition: true,
+    releaseWheel: true
+});
+
+splide.mount();
+
+hotSpotIndicator.forEach((hotspot) => {
+    hotspot.addEventListener('click', (e) => {
+        sliderContainer.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        const dataId = parseInt(e.target.dataset.target);
+        splide.Components.Move.jump(dataId);
+    })
+})
