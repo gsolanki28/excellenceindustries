@@ -6,6 +6,10 @@
                 font-weight: 600;
                 color: #fff;
                 padding: 20px 36px;
+
+                @include tab {
+                    padding: 15px 10px;
+                }
             }
         }
     }

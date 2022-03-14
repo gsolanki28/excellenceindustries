@@ -2,7 +2,17 @@
     padding: 34px 61px;
     z-index: 10;
 
+    @include tab {
+        padding: 10px 20px;
+
+    }
+
+
     &_logo {
         max-width: 172px;
+
+        @include tab {
+            margin: 0 auto;
+        }
     }
 }

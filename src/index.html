@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excellence Industries</title>
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </head>
 
 <body>
-    <header class="header pr aic jsb">
-        <a href="" class="header_logo">
-            <img class="header_logo-img" src="/static/assets/images/logo-x2.png" alt="logo">
-        </a>
-        <nav class="header_nav">
+    <div id="scrollContainer">
+        <header class="header pr aic jsb">
+            <a href="" class="header_logo">
+                <img class="header_logo-img" src="/static/assets/images/logo-x2.png" alt="logo">
+            </a>
+            <!-- <nav class="header_nav">
             <ul class="nav_ul aic">
                 <li class="nav_ul-li">
                     <a class="nav_ul-li-a block" href="">HOME</a>
@@ -31,9 +37,8 @@
                     <a class="block btn btn-secondary" href="">ORDER NOW</a>
                 </li>
             </ul>
-        </nav>
-    </header>
-    <main>
+        </nav> -->
+        </header>
         <section class="featured mb-0 pr">
             <video src="/static/assets/videos/VB.mp4" width="100%" height="100%" autoplay muted loop></video>
             <div class="featured_content">
@@ -45,7 +50,7 @@
                     </svg>
                 </a> -->
             </div>
-            <a href="#product3d" class="scroll-downs">
+            <a href="#exploreDiv" class="scroll-downs">
                 <div class="mousey">
                     <div class="scroller"></div>
                 </div>
@@ -102,8 +107,8 @@
                                 </svg>
                             </div>
                             <div class="explore-img-w pb70">
-                                <img class="w-full lazyload explore-img-w-img" data-src="/static/assets/images/explore-1.png"
-                                    alt="explore-1" />
+                                <img class="w-full lazyload explore-img-w-img"
+                                    data-src="/static/assets/images/explore-1.png" alt="explore-1" />
                             </div>
                         </div>
                         <div class="container pr">
@@ -167,8 +172,8 @@
                                 </svg>
                             </div>
                             <div class="explore-img-w pb73">
-                                <img class="w-full lazyload explore-img-w-img" data-src="/static/assets/images/explore-3.png"
-                                    alt="explore-3" />
+                                <img class="w-full lazyload explore-img-w-img"
+                                    data-src="/static/assets/images/explore-3.png" alt="explore-3" />
                             </div>
                         </div>
                         <div class="container pr">
@@ -307,7 +312,7 @@
                 Copyright © 2022 Excellence Industries. All rights reserved.
             </div>
         </footer>
-    </main>
+    </div>
 </body>
 
 </html>

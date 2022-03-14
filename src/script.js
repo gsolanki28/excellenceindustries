@@ -101,7 +101,7 @@ window.addEventListener('mousewheel', function (e) {
         }
         scrollSlider = false;
         if (!removescrollSlider) {
-            setTimeout(function () { scrollSlider = true }, 1000)
+            setTimeout(function () { scrollSlider = true }, 500)
         }
     }
 });

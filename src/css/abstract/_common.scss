@@ -10,11 +10,13 @@
 .aic {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .jsb {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .fc {
@@ -67,3 +69,7 @@
 .inline-flex {
     display: inline-flex;
 }
+
+@mixin tab {
+    @media (max-width: 800px) { @content; }
+  }

@@ -1,6 +1,11 @@
 section {
     margin: 95px 0;
 
+    @include tab {
+        margin: 40px 0;
+        padding: 0 10px;
+    }
+
     &.mb-0 {
         margin-bottom: 0;
     }
@@ -28,6 +33,12 @@ section {
     height: 100vh;
     margin-top: -130px;
 
+    @include tab {
+        margin-top: -82px;
+        height: 50vh;
+        padding: 0;
+    }
+
     video {
         position: absolute;
         top: 0;
@@ -39,10 +50,17 @@ section {
 
     &_content {
         position: absolute;
-        left: 61px;
+        left: 68px;
         top: 50%;
         transform: translateY(-50%);
         color: #FFFFFF;
+
+        @include tab {
+            left: 0;
+            width: 100%;
+            text-align: center;
+
+        }
 
         &-title {
             font-weight: bold;
@@ -55,18 +73,24 @@ section {
             font-size: 28px;
             line-height: 62px;
             color: #ffffff;
-        }
 
-        &-a {
-            margin-top: 23px;
-            font-size: 18px;
-            line-height: 65px;
-            color: #ffffff;
-
-            &-svg {
-                margin-left: 30px;
+            @include tab {
+                margin-top: 10px;
+                font-size: 18px;
+                line-height: 22px;
             }
         }
+
+        // &-a {
+        //     margin-top: 23px;
+        //     font-size: 18px;
+        //     line-height: 65px;
+        //     color: #ffffff;
+
+        //     &-svg {
+        //         margin-left: 30px;
+        //     }
+        // }
     }
 }
 
@@ -75,9 +99,19 @@ section {
     grid-template-columns: 1fr 1fr;
     grid-gap: 150px;
 
+    @include tab {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
     &_content {
         top: 15%;
         position: relative;
+
+        @include tab {
+            top: 0;
+            order: 2;
+        }
 
         &-h2 {
             text-transform: uppercase;
@@ -89,6 +123,10 @@ section {
             font-size: 18px;
             line-height: 30px;
             max-width: 450px;
+
+            @include tab {
+                font-size: 16px;
+            }
         }
 
         &-span {
@@ -138,6 +176,7 @@ section {
             top: 0;
             left: 0;
             width: 100%;
+
             &.max-w-50 {
                 max-width: 50%;
             }
@@ -186,9 +225,14 @@ section {
     padding-right: 100px;
     position: sticky;
     background-color: #fff;
-    top:0;
+    top: 0;
     height: 100vh;
     overflow: hidden;
+    z-index: 1;
+
+    @include tab {
+        padding-right: 0;
+    }
 
     .slider {
         position: relative;
@@ -203,6 +247,19 @@ section {
         height: 100%;
         opacity: 0;
 
+        @include tab {
+            left: 0;
+            width: 100%;
+        }
+
+        .explore {
+            &_content {
+                @include tab {
+                    padding: 0 10px;
+                }
+            }
+        }
+
         &.active {
             opacity: 1;
             z-index: 1;
@@ -214,6 +271,10 @@ section {
 
                 &_content {
                     top: calc(1% + 20px);
+
+                    @include tab {
+                        top: 0;
+                    }
                 }
             }
         }
@@ -222,6 +283,10 @@ section {
             .explore {
                 &_content {
                     top: calc(25% + 20px);
+
+                    @include tab {
+                        top: 0;
+                    }
                 }
             }
         }
@@ -230,8 +295,16 @@ section {
             .explore {
                 grid-gap: 0;
 
+                @include tab {
+                    grid-gap: 20px;
+                }
+
                 &_content {
                     top: calc(7% + 20px);
+
+                    @include tab {
+                        top: 0;
+                    }
                 }
             }
         }
@@ -240,6 +313,10 @@ section {
             .explore {
                 &_content {
                     top: calc(15% + 20px);
+
+                    @include tab {
+                        top: 0;
+                    }
                 }
             }
         }
@@ -254,6 +331,10 @@ section {
                 width: 25vw;
                 background-color: #fd000066;
                 position: absolute;
+
+                @include tab {
+                    display: none;
+                }
             }
 
             &.hotspot-1 {
@@ -303,6 +384,10 @@ section {
 
     .explore {
         grid-template-columns: 2fr 1fr;
+
+        @include tab {
+            grid-template-columns: 1fr;
+        }
     }
 
 
@@ -315,13 +400,29 @@ section {
         width: 16px;
         height: 160px;
 
+        @include tab {
+            top: auto;
+            bottom: 60px;
+            right: 0;
+            left: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: auto;
+            height: auto;
+        }
+
         .indicator {
-            width: 16px;
+            min-width: 16px;
             height: 16px;
             background: #E6E6E6;
             border-radius: 50%;
-            margin: 20px 0;
             cursor: pointer;
+            margin: 20px 0;
+
+            @include tab {
+                margin: 10px;
+            }
 
             &.active {
                 background: #0098BF;
@@ -362,9 +463,20 @@ section {
     padding: 55px 79px;
     margin: 45px auto 95px;
 
+    @include tab {
+        flex-direction: column;
+        padding: 25px;
+        margin: 30px auto 45px;
+    }
+
     &_title {
         flex: auto;
         max-width: 28%;
+
+        @include tab {
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
 
         &-p {
             font-size: 18px;
@@ -383,6 +495,10 @@ section {
         flex: auto;
         max-width: 55%;
 
+        @include tab {
+            max-width: 100%;
+        }
+
         .dropdown-wrap,
         input {
             margin-bottom: 16px;
@@ -391,6 +507,10 @@ section {
         .max48 {
             max-width: 48%;
             width: 100%;
+
+            @include tab {
+                max-width: 100%;
+            }
         }
 
         &-btn-wrap {
@@ -413,6 +533,10 @@ section {
     &_form-icon {
         align-self: flex-start;
         margin-top: 70px;
+
+        @include tab {
+            display: none;
+        }
     }
 
     .down-icon {
@@ -427,7 +551,7 @@ section {
 /* mouse animation */
 .scroll-downs {
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     right: 0;
     left: 0;
     margin: auto;
