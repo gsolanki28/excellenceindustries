@@ -36,7 +36,7 @@ export default class Experience {
         this.mouse = new THREE.Vector2();
         this.time = new Time();
         this.renderer = new Renderer()
-        this.world = new World();              
+        this.world = new World();
 
         // Resize event
         this.sizes.on('resize', () => {
@@ -54,6 +54,9 @@ export default class Experience {
         this.time.on('tick', () => {
             this.update();
         })
+
+        
+        
     }
 
     resize() {
@@ -64,39 +67,36 @@ export default class Experience {
     update() {
         this.camera.update();
         this.world.update();
-        this.renderer.update()
+        this.renderer.update();
+        //restore context
+        //this.restoreContext()
     }
 
     mouseMoveEvent() {
         this.mouse.x = this.cursor.x / this.sizes.width * 2 - 1
-        this.mouse.y = - (this.cursor.y / this.sizes.height) * 2 + 1
+        this.mouse.y = -(this.cursor.y / this.sizes.height) * 2 + 1
     }
 
     clickEvent() {
         this.world.click();
     }
 
-    destroy()
-    {
+    destroy() {
         this.sizes.off('resize')
         this.time.off('tick')
 
         // Traverse the whole scene
-        this.scene.traverse((child) =>
-        {
+        this.scene.traverse((child) => {
             // Test if it's a mesh
-            if(child instanceof THREE.Mesh)
-            {
+            if (child instanceof THREE.Mesh) {
                 child.geometry.dispose()
 
                 // Loop through the material properties
-                for(const key in child.material)
-                {
+                for (const key in child.material) {
                     const value = child.material[key]
 
                     // Test if there is a dispose function
-                    if(value && typeof value.dispose === 'function')
-                    {
+                    if (value && typeof value.dispose === 'function') {
                         value.dispose()
                     }
                 }
@@ -106,7 +106,17 @@ export default class Experience {
         this.camera.controls.dispose()
         this.renderer.instance.dispose()
 
-        if(this.debug.active)
+        if (this.debug.active)
             this.debug.ui.destroy()
+    }
+
+    restoreContext() {
+        var gl = this.canvas.getContext('webgl');
+
+        this.canvas.addEventListener('webglcontextrestored', function (e) {
+            console.log(e);
+        }, false);
+
+        gl.getExtension('WEBGL_lose_context').restoreContext();
     }
 }
