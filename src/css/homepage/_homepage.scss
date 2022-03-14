@@ -120,11 +120,13 @@ section {
     }
 }
 
+.explore-wrap{
+    padding: 40px 0;
+}
 .explore {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 150px;
-    padding: 30px 0;
 
     @include tab {
         grid-template-columns: 1fr;
@@ -289,7 +291,6 @@ section {
         }
 
         .explore {
-            padding: 0;
 
             &_content {
                 @include tab {
