@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div id="scrollContainer">
+    <div id="scrollSnap">
         <header class="header pr aic jsb">
             <a href="" class="header_logo">
                 <img class="header_logo-img" src="/static/assets/images/logo-x2.png" alt="logo">
@@ -98,7 +98,7 @@
         </section>
         <section id="sliderContainer" class="slider-container">
             <ul class="slider" id="ulSlider">
-                <li data-id="slide-1" class="slide">
+                <li data-id="slide-1" class="slide1">
                     <div class="explore">
                         <div class="pr">
                             <div class="slide-hotspot hotspot-1">
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                 </li>
-                <li data-id="slide-2" class="slide">
+                <li data-id="slide-2" class="slide1">
                     <div class="explore">
                         <div class="pr">
                             <div class="slide-hotspot hotspot-2">
@@ -163,7 +163,7 @@
                         </div>
                     </div>
                 </li>
-                <li data-id="slide-3" class="slide">
+                <li data-id="slide-3" class="slide1">
                     <div class="explore">
                         <div class="pr">
                             <div class="slide-hotspot hotspot-3">
@@ -186,7 +186,7 @@
                         </div>
                     </div>
                 </li>
-                <li data-id="slide-4" class="slide">
+                <li data-id="slide-4" class="slide1">
                     <div class="explore">
                         <div class="pr">
                             <div class="slide-hotspot hotspot-4">
@@ -216,28 +216,16 @@
                 <li data-target="slide-4" data-type="type-2" class="indicator slide-4"></li>
             </ul>
         </section>
-        <section class="search container jsb">
-            <div class="search_title">
-                <p class="search_title-p">Quick Search</p>
-                <h4 class="search_title-h4">Let's find your Referigerator</h4>
-            </div>
-            <form class="search_form" action="">
-                <div class="pr dropdown-wrap">
-                    <div class="pr dropdown">
-                        Product Type
-                        <svg class="down-icon" width="14" height="8">
-                            <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
-                        </svg>
-                    </div>
-                    <div class="dropdown-menu">
-
-                    </div>
+        <section class="search-wrap">
+            <div class="search container jsb">
+                <div class="search_title">
+                    <p class="search_title-p">Quick Search</p>
+                    <h4 class="search_title-h4">Let's find your Referigerator</h4>
                 </div>
-                <div class="aic jsb">
-                    <input class="text-input max48" type="text" placeholder="Price">
-                    <div class="pr dropdown-wrap max48">
+                <form class="search_form" action="">
+                    <div class="pr dropdown-wrap">
                         <div class="pr dropdown">
-                            Features
+                            Product Type
                             <svg class="down-icon" width="14" height="8">
                                 <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
                             </svg>
@@ -246,26 +234,41 @@
 
                         </div>
                     </div>
-                </div>
-                <div class="pr dropdown-wrap">
-                    <div class="pr dropdown">
-                        Door Pattern
-                        <svg class="down-icon" width="14" height="8">
-                            <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
-                        </svg>
-                    </div>
-                    <div class="dropdown-menu">
+                    <div class="aic jsb">
+                        <input class="text-input max48" type="text" placeholder="Price">
+                        <div class="pr dropdown-wrap max48">
+                            <div class="pr dropdown">
+                                Features
+                                <svg class="down-icon" width="14" height="8">
+                                    <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
+                                </svg>
+                            </div>
+                            <div class="dropdown-menu">
 
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="search_form-btn-wrap fc">
-                    <a class="search_form-btn-wrap-a" href="javascript:void(0)">Reset</a>
-                    <button class="btn btn-primary search_form-btn-wrap-btn">
-                        Find
-                    </button>
-                </div>
-            </form>
-            <img class="search_form-icon" width="64" src="/static/assets/images/fridge-icon-1.png" alt="fridge-icon-1">
+                    <div class="pr dropdown-wrap">
+                        <div class="pr dropdown">
+                            Door Pattern
+                            <svg class="down-icon" width="14" height="8">
+                                <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
+                            </svg>
+                        </div>
+                        <div class="dropdown-menu">
+
+                        </div>
+                    </div>
+                    <div class="search_form-btn-wrap fc">
+                        <a class="search_form-btn-wrap-a" href="javascript:void(0)">Reset</a>
+                        <button class="btn btn-primary search_form-btn-wrap-btn">
+                            Find
+                        </button>
+                    </div>
+                </form>
+                <img class="search_form-icon" width="64" src="/static/assets/images/fridge-icon-1.png"
+                    alt="fridge-icon-1">
+            </div>
         </section>
         <footer class="footer">
             <div class="footer-padding">

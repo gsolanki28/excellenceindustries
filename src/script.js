@@ -10,6 +10,7 @@ const slideIndicator = document.querySelectorAll('.indicator');
 const allSlides = document.querySelectorAll('.slide');
 const sliderContainer = document.querySelector('.slider-container');
 const hotSpotIndicator = document.querySelectorAll('.explore-hotspot');
+const scrollSnap = document.querySelector('#scrollSnap');
 let scrollSlider = false;
 // //slider 
 // const sliderFunction = (e) => {
@@ -110,5 +111,5 @@ let scrollSlider = false;
 
 new WholePageSlider({
     containerId: "ulSlider",
-    sectionClass: 'slide'
+    sectionClass: 'slide1'
 })
