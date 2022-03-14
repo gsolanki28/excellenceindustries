@@ -7,7 +7,7 @@ export default class Sizes extends EventEmitter
         super()
 
         // Setup
-        this.width = document.querySelector('#scrollSnap').clientWidth
+        this.width = document.body.clientWidth
         this.height = 600
         this.pixelRatio = Math.min(window.devicePixelRatio, 2)
 

@@ -35,7 +35,7 @@ export default class Fridge {
         this.scene.add(this.model)
 
         this.model.traverse((child) => {
-            console.log(child);
+            // console.log(child);
             if (child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial) {
                 this.objects.push(child);
                 if (child.isMesh) {
