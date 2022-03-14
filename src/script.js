@@ -8,6 +8,7 @@ const slideIndicator = document.querySelectorAll('.indicator');
 const allSlides = document.querySelectorAll('.slide');
 const sliderContainer = document.querySelector('.slider-container');
 const hotSpotIndicator = document.querySelectorAll('.explore-hotspot');
+const scrollSnap = document.querySelector('#scrollSnap');
 let scrollSlider = false;
 //slider 
 const sliderFunction = (e) => {
@@ -46,15 +47,15 @@ hotSpotIndicator.forEach((hotspot) => {
     })
 })
 
-window.addEventListener('scroll', function () {
+scrollSnap.addEventListener('scroll', function () {
     console.log(sliderContainer.offsetTop);
-    console.log(window.scrollY);
-    if (sliderContainer.offsetTop === window.scrollY) {
-        document.body.style.overflow = "hidden";
+    console.log(scrollSnap.scrollTop);
+    if (sliderContainer.offsetTop == scrollSnap.scrollTop ) {
         scrollSlider = true;
         sliderContainer.style.position = "sticky";
+        scrollSnap.style.overflow = "hidden";
     } else {
-        document.body.style.overflow = "auto";
+        scrollSnap.style.overflowY = "auto";
         scrollSlider = false;
     }
 });
@@ -85,7 +86,7 @@ window.addEventListener('mousewheel', function (e) {
             }
             else {
                 removescrollSlider = true;
-                document.body.style.overflow = "auto";
+                scrollSnap.style.overflowY = "auto";
                 sliderContainer.style.position = "relative";
             }
         }
@@ -95,13 +96,13 @@ window.addEventListener('mousewheel', function (e) {
             }
             else {
                 removescrollSlider = true;
-                document.body.style.overflow = "auto";
+                scrollSnap.style.overflowY = "auto";
                 sliderContainer.style.position = "relative";
             }
         }
         scrollSlider = false;
         if (!removescrollSlider) {
-            setTimeout(function () { scrollSlider = true }, 500)
+            setTimeout(function () { scrollSlider = true }, 1000)
         }
     }
 });

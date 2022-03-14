@@ -1,5 +1,24 @@
+body {
+    overflow: hidden;
+}
+
+#scrollSnap {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+footer,
+.search {
+    scroll-snap-align: start;
+}
+
 section {
-    margin: 95px 0;
+    padding: 95px 0;
+    scroll-snap-align: start;
 
     @include tab {
         margin: 40px 0;
@@ -235,8 +254,11 @@ section {
     }
 
     .slider {
-        position: relative;
-        padding-bottom: 56.25%;
+        position: absolute;
+        top:50px;
+        height: calc(100% - 100px);
+        width: 100%;
+        overflow: hidden;
     }
 
     .slide {
@@ -457,11 +479,15 @@ section {
     // }
 }
 
+.search-wrap {
+    padding: 50px 0;
+}
+
 .search {
     background: rgba(0, 152, 191, 0.2);
     border-radius: 8px;
     padding: 55px 79px;
-    margin: 45px auto 95px;
+    margin: 0 auto;
 
     @include tab {
         flex-direction: column;
