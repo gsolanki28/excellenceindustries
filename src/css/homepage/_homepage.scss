@@ -255,7 +255,7 @@ section {
 
     .slider {
         position: absolute;
-        top:50px;
+        top: 50px;
         height: calc(100% - 100px);
         width: 100%;
         overflow: hidden;
@@ -685,4 +685,47 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+
+
+/* slider */
+
+
+.splide {
+    outline: none;
+    position: relative;
+
+    &__track {
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+    }
+
+    &__list {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        display: flex;
+        height: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform-style: preserve-3d;
+    }
+
+    &__slide {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        list-style-type: none !important;
+        margin: 0;
+        outline: none;
+        position: relative;
+    }
+}
+
+.splide--ttb.is-active>.splide__slider>.splide__track>.splide__list,
+.splide--ttb.is-active>.splide__track>.splide__list {
+    display: block;
 }
