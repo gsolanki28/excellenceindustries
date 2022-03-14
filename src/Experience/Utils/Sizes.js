@@ -7,7 +7,7 @@ export default class Sizes extends EventEmitter
         super()
 
         // Setup
-        this.width = window.innerWidth;//document.querySelector('#scrollSnap').clientWidth
+        this.width = document.body.clientWidth
         this.height = 600
         this.pixelRatio = Math.min(window.devicePixelRatio, 2)
 
@@ -15,7 +15,7 @@ export default class Sizes extends EventEmitter
         window.addEventListener('resize', () =>
         {
             this.width = document.body.clientWidth
-            this.height = window.innerHeight
+            this.height = 600
             this.pixelRatio = Math.min(window.devicePixelRatio, 2)
 
             this.trigger('resize')

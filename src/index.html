@@ -11,7 +11,7 @@
 <body>
     <header class="header pr aic jsb">
         <a href="" class="header_logo">
-            <img class="header_logo-img" src="/static/assets/images/logo-white.png" alt="logo">
+            <img class="header_logo-img" src="/static/assets/images/logo-x2.png" alt="logo">
         </a>
         <nav class="header_nav">
             <ul class="nav_ul aic">
@@ -35,30 +35,30 @@
     </header>
     <main>
         <section class="featured mb-0 pr">
-            <video src="/static/assets/videos/vb5.mp4" width="100%" height="100%" autoplay muted loop></video>
-            <!-- <div class="featured_content">
+            <video src="/static/assets/videos/VB.mp4" width="100%" height="100%" autoplay muted loop></video>
+            <div class="featured_content">
                 <h1 class="featured_content-title">The Perfect Food <br /> Storage Solution.</h1>
                 <p class="featured_content-p">For all you storage requirement.</p>
-                <a class="featured_content-a aic" href="">Find Out More
+                <!-- <a class="featured_content-a aic" href="">Find Out More
                     <svg class="featured_content-a-svg" width="35" height="35">
                         <use xlink:href="/static/assets/icons/icons.svg#downloadIcon" />
                     </svg>
-                </a>
-            </div> -->
-            <div class="scroll-downs">
+                </a> -->
+            </div>
+            <a href="#product3d" class="scroll-downs">
                 <div class="mousey">
                     <div class="scroller"></div>
                 </div>
-            </div>
+            </a>
         </section>
-        <section class="product-3d m-0 pr text-center">
+        <!-- <section id="product3d" class="product-3d m-0 pr text-center">
             <div id="loader"></div>
             <canvas id="product360" width="700"></canvas>
             <svg class="product-3d-svg" width="60" height="35">
                 <use xlink:href="/static/assets/icons/icons.svg#360Icon">
             </svg>
-        </section>
-        <section id="exploreDiv" class="explore-wrap mb-0">
+        </section> -->
+        <section id="exploreDiv" class="explore-wrap">
             <div class="container explore">
                 <div class="explore_content">
                     <h2 class="explore_content-h2">Explore the features of the products</h2>
@@ -84,11 +84,14 @@
                         <use data-target="slide-4" data-type="type-2"
                             xlink:href="/static/assets/icons/icons.svg#hotspotIcon" />
                     </svg>
-                    <img class="explore-img" src="/static/assets/images/explore.png" alt="explore1">
+                    <div class="explore-img-w pb99">
+                        <img class="w-full lazyload explore-img-w-img" data-src="/static/assets/images/explore.png"
+                            alt="explore" />
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="sliderContainer" class="slider-container m-0">
+        <section id="sliderContainer" class="slider-container">
             <ul class="slider">
                 <li data-id="slide-1" class="slide active">
                     <div class="explore">
@@ -98,7 +101,10 @@
                                     <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
                                 </svg>
                             </div>
-                            <img class="explore-img" src="/static/assets/images/explore-1.png" alt="explore1" />
+                            <div class="explore-img-w pb70">
+                                <img class="w-full lazyload explore-img-w-img" data-src="/static/assets/images/explore-1.png"
+                                    alt="explore-1" />
+                            </div>
                         </div>
                         <div class="container pr">
                             <div class="explore_content">
@@ -111,7 +117,19 @@
                                     <svg class="explore_content-span-svg" width="23" height="26">
                                         <use xlink:href="/static/assets/icons/icons.svg#tempIcon" />
                                     </svg>
-                                    4&#8451; to -24&#8451;
+                                    <span class="pr degree">
+                                        4 <svg class="degree-icon" width="7" height="8">
+                                            <use xlink:href="/static/assets/icons/icons.svg#degreeIcon" />
+                                        </svg>
+                                    </span>
+                                    C to
+                                    <span class="pr degree ml5">
+                                        - 24
+                                        <svg class="degree-icon" width="7" height="8">
+                                            <use xlink:href="/static/assets/icons/icons.svg#degreeIcon" />
+                                        </svg>
+                                    </span>
+                                    C
                                 </span>
                             </div>
                         </div>
@@ -119,6 +137,17 @@
                 </li>
                 <li data-id="slide-2" class="slide">
                     <div class="explore">
+                        <div class="pr">
+                            <div class="slide-hotspot hotspot-2">
+                                <svg width="73" height="73">
+                                    <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
+                                </svg>
+                            </div>
+                            <div class="explore-img-w pb70">
+                                <img class="w-full lazyload explore-img-w-img reverse"
+                                    data-src="/static/assets/images/explore-1.png" alt="explore-1" />
+                            </div>
+                        </div>
                         <div class="container pr">
                             <div class="explore_content">
                                 <h4 class="explore_content-h4">Heavy Duty Shelves</h4>
@@ -126,14 +155,6 @@
                                     30 kg Load endurance / shelf.
                                 </p>
                             </div>
-                        </div>
-                        <div class="pr">
-                            <div class="slide-hotspot hotspot-2">
-                                <svg width="73" height="73">
-                                    <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
-                                </svg>
-                            </div>
-                            <img class="explore-img" src="/static/assets/images/explore-2.png" alt="explore1" />
                         </div>
                     </div>
                 </li>
@@ -145,7 +166,10 @@
                                     <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
                                 </svg>
                             </div>
-                            <img class="explore-img" src="/static/assets/images/explore-3.png" alt="explore1" />
+                            <div class="explore-img-w pb73">
+                                <img class="w-full lazyload explore-img-w-img" data-src="/static/assets/images/explore-3.png"
+                                    alt="explore-3" />
+                            </div>
                         </div>
                         <div class="container pr">
                             <div class="explore_content">
@@ -159,20 +183,23 @@
                 </li>
                 <li data-id="slide-4" class="slide">
                     <div class="explore">
-                        <div class="container pr">
-                            <div class="explore_content s-2-inner">
-                                <h4 class="explore_content-h4">Cold Wall Evaporator</h4>
-                                <p class="explore_content-p">Lorem ipsum dolor sit amet, consectetur adipiscing.
-                                </p>
-                            </div>
-                        </div>
                         <div class="pr">
                             <div class="slide-hotspot hotspot-4">
                                 <svg width="73" height="73">
                                     <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
                                 </svg>
                             </div>
-                            <img class="explore-img" src="/static/assets/images/explore-4.png" alt="explore1" />
+                            <div class="explore-img-w pb73">
+                                <img class="w-full lazyload explore-img-w-img reverse"
+                                    data-src="/static/assets/images/explore-4.png" alt="explore-4" />
+                            </div>
+                        </div>
+                        <div class="container pr">
+                            <div class="explore_content s-2-inner">
+                                <h4 class="explore_content-h4">Cold Wall Evaporator</h4>
+                                <p class="explore_content-p">Lorem ipsum dolor sit amet, consectetur adipiscing.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -183,6 +210,57 @@
                 <li data-target="slide-3" data-type="type-1" class="indicator slide-3"></li>
                 <li data-target="slide-4" data-type="type-2" class="indicator slide-4"></li>
             </ul>
+        </section>
+        <section class="search container jsb">
+            <div class="search_title">
+                <p class="search_title-p">Quick Search</p>
+                <h4 class="search_title-h4">Let's find your Referigerator</h4>
+            </div>
+            <form class="search_form" action="">
+                <div class="pr dropdown-wrap">
+                    <div class="pr dropdown">
+                        Product Type
+                        <svg class="down-icon" width="14" height="8">
+                            <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
+                        </svg>
+                    </div>
+                    <div class="dropdown-menu">
+
+                    </div>
+                </div>
+                <div class="aic jsb">
+                    <input class="text-input max48" type="text" placeholder="Price">
+                    <div class="pr dropdown-wrap max48">
+                        <div class="pr dropdown">
+                            Features
+                            <svg class="down-icon" width="14" height="8">
+                                <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
+                            </svg>
+                        </div>
+                        <div class="dropdown-menu">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pr dropdown-wrap">
+                    <div class="pr dropdown">
+                        Door Pattern
+                        <svg class="down-icon" width="14" height="8">
+                            <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
+                        </svg>
+                    </div>
+                    <div class="dropdown-menu">
+
+                    </div>
+                </div>
+                <div class="search_form-btn-wrap fc">
+                    <a class="search_form-btn-wrap-a" href="javascript:void(0)">Reset</a>
+                    <button class="btn btn-primary search_form-btn-wrap-btn">
+                        Find
+                    </button>
+                </div>
+            </form>
+            <img class="search_form-icon" width="64" src="/static/assets/images/fridge-icon-1.png" alt="fridge-icon-1">
         </section>
         <footer class="footer">
             <div class="footer-padding">
@@ -230,10 +308,6 @@
             </div>
         </footer>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
 </body>
 
 </html>
