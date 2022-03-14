@@ -1,4 +1,6 @@
 import './css/main.scss'
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import Experience from './Experience/Experience.js'
 
 // const experience = new Experience(document.querySelector('canvas#product360'));
@@ -44,24 +46,17 @@ hotSpotIndicator.forEach((hotspot) => {
     })
 })
 
-function isInViewPort(element) {
-    var bounding = element.getBoundingClientRect();
-
-    if (
-        bounding.top >= 0 &&
-        bounding.left >= 0 &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    ) {
+window.addEventListener('scroll', function () {
+    console.log(sliderContainer.offsetTop);
+    console.log(window.scrollY);
+    if (sliderContainer.offsetTop === window.scrollY) {
         document.body.style.overflow = "hidden";
         scrollSlider = true;
+        sliderContainer.style.position = "sticky";
     } else {
-        console.log("false");
+        document.body.style.overflow = "auto";
+        scrollSlider = false;
     }
-}
-
-window.addEventListener('scroll', function () {
-    isInViewPort(sliderContainer);
 });
 
 // for scroll animation 
@@ -91,6 +86,7 @@ window.addEventListener('mousewheel', function (e) {
             else {
                 removescrollSlider = true;
                 document.body.style.overflow = "auto";
+                sliderContainer.style.position = "relative";
             }
         }
         else {
@@ -100,36 +96,12 @@ window.addEventListener('mousewheel', function (e) {
             else {
                 removescrollSlider = true;
                 document.body.style.overflow = "auto";
+                sliderContainer.style.position = "relative";
             }
         }
         scrollSlider = false;
         if (!removescrollSlider) {
-            setTimeout(function () { scrollSlider = true }, 1500)
+            setTimeout(function () { scrollSlider = true }, 1000)
         }
     }
-
 });
-
-
-
-
-
-// placeholder image 
-let imgTest = document.querySelectorAll(".real-img");
-
-imgTest.forEach((img) => {
-    if (img.complete) {
-        loaded(img)
-    } else {
-        img.addEventListener('load', loaded)
-        img.addEventListener('error', function () {
-            alert('error')
-        })
-    }
-})
-
-// function loaded(img) {
-//     img.classList.add('loaded');
-// }
-
-

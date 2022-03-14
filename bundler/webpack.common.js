@@ -30,10 +30,22 @@ module.exports = {
         rules: [
             // HTML
             {
-                test: /\.(html)$/,
-                use: [
-                    'html-loader'
-                ]
+                test: /\.html$/,
+                use: {
+                    loader: "html-loader",
+                    options: {
+                        sources: {
+                            list: [
+                                "...", // important, to correctly handle the default tags like 'src'
+                                {
+                                    tag: "img",
+                                    attribute: "data-src",
+                                    type: "src",
+                                },
+                            ]
+                        }
+                    }
+                }
             },
 
             // JS

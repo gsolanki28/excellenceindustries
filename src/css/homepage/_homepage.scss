@@ -51,7 +51,7 @@ section {
 
         &-p {
             margin-top: 4px;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 28px;
             line-height: 62px;
             color: #ffffff;
@@ -105,6 +105,10 @@ section {
             .degree {
                 padding-right: 7px;
 
+                &.ml5 {
+                    margin-left: 5px;
+                }
+
                 &-icon {
                     position: absolute;
                     right: 0;
@@ -133,19 +137,7 @@ section {
             position: absolute;
             top: 0;
             left: 0;
-
-            &.placeholder-img {
-                filter: blur(5px);
-            }
-
-            &.real-img {
-                opacity: 1;
-
-                &.loaded {
-                    opacity: 1;
-                }
-            }
-
+            width: 100%;
             &.max-w-50 {
                 max-width: 50%;
             }
@@ -189,10 +181,13 @@ section {
 }
 
 .slider-container {
-    margin: 50px 0;
+    margin: 0;
+    padding: 50px 0;
     padding-right: 100px;
-    position: relative;
-    max-height: calc(100vh - 100px);
+    position: sticky;
+    background-color: #fff;
+    top:0;
+    height: 100vh;
     overflow: hidden;
 
     .slider {
@@ -365,7 +360,7 @@ section {
     background: rgba(0, 152, 191, 0.2);
     border-radius: 8px;
     padding: 55px 79px;
-    margin: 95px auto;
+    margin: 45px auto 95px;
 
     &_title {
         flex: auto;
@@ -479,7 +474,7 @@ section {
 
 .slide.active {
     animation-name: FadeIn;
-    animation-duration: 3s;
+    animation-duration: 2s;
     transition-timing-function: linear;
 }
 
