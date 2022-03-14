@@ -124,6 +124,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 150px;
+    padding: 30px 0;
 
     @include tab {
         grid-template-columns: 1fr;
@@ -248,7 +249,6 @@ section {
 .slider-container {
     margin: 0;
     padding: 50px 0;
-    padding-right: 100px;
     position: sticky;
     background-color: #fff;
     top: 0;
@@ -262,10 +262,17 @@ section {
 
     .slider {
         position: absolute;
-        top:50px;
+        top: 50px;
         height: calc(100% - 100px);
-        width: 100%;
+        width: calc(100% - 100px);
         overflow: hidden;
+        padding-right: 100px;
+
+        @include tab {
+            padding: 0;
+            width: 100%;
+
+        }
     }
 
     .slide {
@@ -282,6 +289,8 @@ section {
         }
 
         .explore {
+            padding: 0;
+
             &_content {
                 @include tab {
                     padding: 0 10px;
