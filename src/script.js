@@ -1,8 +1,7 @@
 import './css/main.scss'
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
-import './css/slider.css'
-import './lib/slider.js'
+import Splide from '@splidejs/splide';
 import Experience from './Experience/Experience.js'
 
 // const experience = new Experience(document.querySelector('canvas#product360'));
@@ -109,7 +108,15 @@ let scrollSlider = false;
 //     }
 // });
 
-new WholePageSlider({
-    containerId: "ulSlider",
-    sectionClass: 'slide1'
-})
+// new WholePageSlider({
+//     containerId: "ulSlider",
+//     sectionClass: 'slide1'
+// })
+
+var splide = new Splide( '.splide', {
+    direction: 'ttb',
+    height   : '10rem',
+    wheel    : true,
+  } );
+  
+  splide.mount();
