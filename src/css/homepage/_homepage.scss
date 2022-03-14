@@ -9,6 +9,13 @@ body {
     overscroll-behavior-y: contain;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 footer,
