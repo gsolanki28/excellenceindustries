@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excellence Industries</title>
-    <script>
+    <!-- <script>
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         }
-    </script>
+    </script> -->
 </head>
 
 <body>
-    <div id="scrollSnap">
-        <header class="header pr aic jsb">
-            <a href="" class="header_logo">
-                <img class="header_logo-img" src="/static/assets/images/logo-x2.png" alt="logo">
-            </a>
-            <!-- <nav class="header_nav">
+    <div class="layout">
+        <section class="section s1">
+            <header class="header pr aic jsb">
+                <a href="" class="header_logo">
+                    <img class="header_logo-img" src="/static/assets/images/logo-x2.png" alt="logo">
+                </a>
+                <!-- <nav class="header_nav">
             <ul class="nav_ul aic">
                 <li class="nav_ul-li">
                     <a class="nav_ul-li-a block" href="">HOME</a>
@@ -38,23 +39,24 @@
                 </li>
             </ul>
         </nav> -->
-        </header>
-        <section class="featured mb-0 pr">
-            <video src="/static/assets/videos/VB.mp4" width="100%" height="100%" autoplay muted loop></video>
-            <div class="featured_content">
-                <h1 class="featured_content-title">The Perfect Food <br /> Storage Solution.</h1>
-                <p class="featured_content-p">For all you storage requirement.</p>
-                <!-- <a class="featured_content-a aic" href="">Find Out More
+            </header>
+            <div class="featured mb-0 pr">
+                <video src="/static/assets/videos/VB.mp4" width="100%" height="100%" autoplay muted loop></video>
+                <div class="featured_content">
+                    <h1 class="featured_content-title">The Perfect Food <br /> Storage Solution.</h1>
+                    <p class="featured_content-p">For all you storage requirement.</p>
+                    <!-- <a class="featured_content-a aic" href="">Find Out More
                     <svg class="featured_content-a-svg" width="35" height="35">
                         <use xlink:href="/static/assets/icons/icons.svg#downloadIcon" />
                     </svg>
                 </a> -->
-            </div>
-            <a href="#exploreDiv" class="scroll-downs">
-                <div class="mousey">
-                    <div class="scroller"></div>
                 </div>
-            </a>
+                <a href="#exploreDiv" class="scroll-downs">
+                    <div class="mousey">
+                        <div class="scroller"></div>
+                    </div>
+                </a>
+            </div>
         </section>
         <!-- <section id="product3d" class="product-3d m-0 pr text-center">
             <div id="loader"></div>
@@ -63,7 +65,7 @@
                 <use xlink:href="/static/assets/icons/icons.svg#360Icon">
             </svg>
         </section> -->
-        <section id="exploreDiv" class="explore-wrap">
+        <section id="exploreDiv" class="s2 explore-wrap">
             <div class="container explore">
                 <div class="explore_content">
                     <h2 class="explore_content-h2">Explore the features of the products</h2>
@@ -96,12 +98,12 @@
                 </div>
             </div>
         </section>
-        <section id="sliderContainer" class="slider-container">
-            <ul class="slider">
-                <li data-id="slide-1" class="slide active">
+        <section id="featuresContainer" class="s3 features-container">
+            <ul class="features">
+                <li data-id="slide-1" class="features-item active">
                     <div class="explore">
                         <div class="pr">
-                            <div class="slide-hotspot hotspot-1">
+                            <div class="features-hotspot hotspot-1">
                                 <svg width="73" height="73">
                                     <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
                                 </svg>
@@ -140,10 +142,10 @@
                         </div>
                     </div>
                 </li>
-                <li data-id="slide-2" class="slide">
+                <li data-id="slide-2" class="features-item">
                     <div class="explore">
                         <div class="pr">
-                            <div class="slide-hotspot hotspot-2">
+                            <div class="features-hotspot hotspot-2">
                                 <svg width="73" height="73">
                                     <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
                                 </svg>
@@ -163,10 +165,10 @@
                         </div>
                     </div>
                 </li>
-                <li data-id="slide-3" class="slide">
+                <li data-id="slide-3" class="features-item">
                     <div class="explore">
                         <div class="pr">
-                            <div class="slide-hotspot hotspot-3">
+                            <div class="features-hotspot hotspot-3">
                                 <svg width="73" height="73">
                                     <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
                                 </svg>
@@ -186,10 +188,10 @@
                         </div>
                     </div>
                 </li>
-                <li data-id="slide-4" class="slide">
+                <li data-id="slide-4" class="features-item">
                     <div class="explore">
                         <div class="pr">
-                            <div class="slide-hotspot hotspot-4">
+                            <div class="features-hotspot hotspot-4">
                                 <svg width="73" height="73">
                                     <use xlink:href="/static/assets/icons/icons.svg#slideHotspotIcon" />
                                 </svg>
@@ -216,29 +218,17 @@
                 <li data-target="slide-4" data-type="type-2" class="indicator slide-4"></li>
             </ul>
         </section>
-        <section class="search-wrap">
-            <div class="search container jsb">
-                <div class="search_title">
-                    <p class="search_title-p">Quick Search</p>
-                    <h4 class="search_title-h4">Let's find your Referigerator</h4>
-                </div>
-                <form class="search_form" action="">
-                    <div class="pr dropdown-wrap">
-                        <div class="pr dropdown">
-                            Product Type
-                            <svg class="down-icon" width="14" height="8">
-                                <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
-                            </svg>
-                        </div>
-                        <div class="dropdown-menu">
-
-                        </div>
+        <section class="s4">
+            <div class="search-wrap s4">
+                <div class="search container jsb">
+                    <div class="search_title">
+                        <p class="search_title-p">Quick Search</p>
+                        <h4 class="search_title-h4">Let's find your Referigerator</h4>
                     </div>
-                    <div class="aic jsb">
-                        <input class="text-input max48" type="text" placeholder="Price">
-                        <div class="pr dropdown-wrap max48">
+                    <form class="search_form" action="">
+                        <div class="pr dropdown-wrap">
                             <div class="pr dropdown">
-                                Features
+                                Product Type
                                 <svg class="down-icon" width="14" height="8">
                                     <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
                                 </svg>
@@ -247,75 +237,90 @@
 
                             </div>
                         </div>
-                    </div>
-                    <div class="pr dropdown-wrap">
-                        <div class="pr dropdown">
-                            Door Pattern
-                            <svg class="down-icon" width="14" height="8">
-                                <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
-                            </svg>
-                        </div>
-                        <div class="dropdown-menu">
+                        <div class="aic jsb">
+                            <input class="text-input max48" type="text" placeholder="Price">
+                            <div class="pr dropdown-wrap max48">
+                                <div class="pr dropdown">
+                                    Features
+                                    <svg class="down-icon" width="14" height="8">
+                                        <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu">
 
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="search_form-btn-wrap fc">
-                        <a class="search_form-btn-wrap-a" href="javascript:void(0)">Reset</a>
-                        <button class="btn btn-primary search_form-btn-wrap-btn">
-                            Find
-                        </button>
-                    </div>
-                </form>
-                <img class="search_form-icon" width="64" src="/static/assets/images/fridge-icon-1.png"
-                    alt="fridge-icon-1">
+                        <div class="pr dropdown-wrap">
+                            <div class="pr dropdown">
+                                Door Pattern
+                                <svg class="down-icon" width="14" height="8">
+                                    <use xlink:href="/static/assets/icons/icons.svg#downIcon" />
+                                </svg>
+                            </div>
+                            <div class="dropdown-menu">
+
+                            </div>
+                        </div>
+                        <div class="search_form-btn-wrap fc">
+                            <a class="search_form-btn-wrap-a" href="javascript:void(0)">Reset</a>
+                            <button class="btn btn-primary search_form-btn-wrap-btn">
+                                Find
+                            </button>
+                        </div>
+                    </form>
+                    <img class="search_form-icon" width="64" src="/static/assets/images/fridge-icon-1.png"
+                        alt="fridge-icon-1">
+                </div>
             </div>
-        </section>
-        <footer class="footer">
-            <div class="footer-padding">
-                <div class="aic jsb">
-                    <a href="" class="header_logo">
-                        <img class="header_logo-img" src="/static/assets/images/logo-white.png" alt="logo">
-                    </a>
-                    <nav class="footer_nav">
-                        <ul class="nav_ul aic">
+            <footer class="footer">
+                <div class="footer-padding">
+                    <div class="aic jsb">
+                        <a href="" class="header_logo">
+                            <img class="header_logo-img" src="/static/assets/images/logo-white.png" alt="logo">
+                        </a>
+                        <nav class="footer_nav">
+                            <ul class="nav_ul aic">
+                                <li class="nav_ul-li">
+                                    <a class="nav_ul-li-a block" href="">HOME</a>
+                                </li>
+                                <li class="nav_ul-li">
+                                    <a class="nav_ul-li-a block" href="">ABOUT US</a>
+                                </li>
+                                <li class="nav_ul-li">
+                                    <a class="nav_ul-li-a block" href="">SERVICES</a>
+                                </li>
+                                <li class="nav_ul-li">
+                                    <a class="nav_ul-li-a block" href="">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <nav class="footer_nav-2 text-center">
+                        <ul class="nav_ul aic inline-flex">
                             <li class="nav_ul-li">
-                                <a class="nav_ul-li-a block" href="">HOME</a>
+                                <a class="nav_ul-li-a block" href="">Privacy Policy</a>
                             </li>
                             <li class="nav_ul-li">
-                                <a class="nav_ul-li-a block" href="">ABOUT US</a>
+                                <a class="nav_ul-li-a block" href="">Terms of Use</a>
                             </li>
                             <li class="nav_ul-li">
-                                <a class="nav_ul-li-a block" href="">SERVICES</a>
+                                <a class="nav_ul-li-a block" href="">Legal Site</a>
                             </li>
                             <li class="nav_ul-li">
-                                <a class="nav_ul-li-a block" href="">CONTACT US</a>
+                                <a class="nav_ul-li-a block" href="">Site Map</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <nav class="footer_nav-2 text-center">
-                    <ul class="nav_ul aic inline-flex">
-                        <li class="nav_ul-li">
-                            <a class="nav_ul-li-a block" href="">Privacy Policy</a>
-                        </li>
-                        <li class="nav_ul-li">
-                            <a class="nav_ul-li-a block" href="">Terms of Use</a>
-                        </li>
-                        <li class="nav_ul-li">
-                            <a class="nav_ul-li-a block" href="">Legal Site</a>
-                        </li>
-                        <li class="nav_ul-li">
-                            <a class="nav_ul-li-a block" href="">Site Map</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer-hr"></div>
-            <div class="footer-padding footer-copyright text-center">
-                Copyright © 2022 Excellence Industries. All rights reserved.
-            </div>
-        </footer>
+                <div class="footer-hr"></div>
+                <div class="footer-padding footer-copyright text-center">
+                    Copyright © 2022 Excellence Industries. All rights reserved.
+                </div>
+            </footer>
+        </section>
     </div>
+    <script src="scroll.js"></script>
 </body>
 
 </html>

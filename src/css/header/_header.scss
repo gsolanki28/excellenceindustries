@@ -1,6 +1,10 @@
 .header {
     padding: 34px 61px;
     z-index: 10;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 0;
 
     @include tab {
         padding: 10px 20px;
