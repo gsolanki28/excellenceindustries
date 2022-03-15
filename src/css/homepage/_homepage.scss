@@ -3,11 +3,7 @@ body {
 }
 
 section {
-    height: 100vh;
-    padding: 95px 0;
-
     @include tab {
-        margin: 40px 0;
         padding: 0 10px;
     }
 
@@ -474,13 +470,13 @@ section {
 }
 
 .search-wrap {
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 .search {
     background: rgba(0, 152, 191, 0.2);
     border-radius: 8px;
-    padding: 55px 79px;
+    padding: 30px 79px;
     margin: 0 auto;
 
     @include tab {

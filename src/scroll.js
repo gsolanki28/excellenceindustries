@@ -7,6 +7,7 @@ let qty = 1,
   main = null,
   next = null
 
+
 // Listening to scroll event
 window.onscroll = () => {
   if (startFlag) {

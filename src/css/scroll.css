@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 
 .layout {
     width: 100%;
-    height: calc(100vh * 4);
+    height: calc(100vh * 3);
     position: relative;
 }
 
@@ -85,7 +85,6 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     color: var(--color-white);
     transform: translateY(100vh);
     transition: all var(--time-animation) ease-in-out;
@@ -108,10 +107,8 @@ body::-webkit-scrollbar {
 
 .layout .s4 {
     z-index: 1;
-}
-
-.layout .s5 {
-    z-index: 1;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /*** RESPONSIVE ***/
