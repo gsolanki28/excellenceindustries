@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import Renderer from './Renderer';
-import gsap from 'gsap';
+//import gsap from 'gsap';
 import Sizes from './Utils/Sizes';
 import Cursor from './Utils/Cursor';
 import Time from './Utils/Time';
