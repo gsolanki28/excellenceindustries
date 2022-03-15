@@ -3,13 +3,16 @@ import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import Experience from './Experience/Experience.js'
 
-// const experience = new Experience(document.querySelector('canvas#product360'));
+
 const slideIndicator = document.querySelectorAll('.indicator');
 const allSlides = document.querySelectorAll('.slide');
 const sliderContainer = document.querySelector('.slider-container');
 const hotSpotIndicator = document.querySelectorAll('.explore-hotspot');
 const scrollSnap = document.querySelector('#scrollSnap');
 let scrollSlider = false;
+
+
+const experience = new Experience(document.querySelector('canvas#product360'));
 //slider 
 const sliderFunction = (e) => {
     let getSlideId = scrollSlider ? e.dataset.target : e.target.dataset.target;
@@ -48,8 +51,6 @@ hotSpotIndicator.forEach((hotspot) => {
 })
 
 scrollSnap.addEventListener('scroll', function () {
-    console.log(sliderContainer.offsetTop);
-    console.log(scrollSnap.scrollTop);
     if (sliderContainer.offsetTop == scrollSnap.scrollTop ) {
         scrollSlider = true;
         sliderContainer.style.position = "sticky";
