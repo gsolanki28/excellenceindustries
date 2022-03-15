@@ -422,7 +422,8 @@
       // Listening to scroll event
       window.onscroll = () => {
         if (startFlag) {
-          const scrollDown = this.scrollY >= initialScroll;
+            const scrollY= document.documentElement.scrollTop || document.body.scrollTop;
+          const scrollDown = scrollY >= initialScroll;
           const scrollLimit = qty >= 1 && qty <= sectionsQty;
           // Verify that the scroll does not exceed the number of sections
           if (scrollLimit) {
@@ -443,7 +444,7 @@
           }
           // Wait for the scrolling to finish to reset the values
           setTimeout(() => {
-            initialScroll = this.scrollY;
+            initialScroll = scrollY;
             startFlag = true;
             body.style.overflowY = "scroll"; // Unlock scroll
           }, TIME_OUT);
