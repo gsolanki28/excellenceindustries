@@ -3,7 +3,7 @@ import {
     MeshStandardMaterial
 } from 'three';
 import Experience from '../Experience.js'
-import gsap from "gsap"
+//import gsap from "gsap"
 import { addPointLight, setColor, setMetalNess, setRoughNess } from '../Utils/three-helper.js';
 
 export default class Fridge {
@@ -137,15 +137,15 @@ export default class Fridge {
         var aabb = new THREE.Box3().setFromObject(object);
         var center = aabb.getCenter(new THREE.Vector3());
         var size = aabb.getSize(new THREE.Vector3());
-        gsap.to(this.camera.instance.position, {
-            duration: 1,
-            x: center.x,
-            y: center.y,
-            z: center.z + size.z, // maybe adding even more offset depending on your model
-            onUpdate: () => {
-                this.camera.instance.fov = 50
-                this.camera.instance.updateProjectionMatrix();
-            }
-        });
+        // gsap.to(this.camera.instance.position, {
+        //     duration: 1,
+        //     x: center.x,
+        //     y: center.y,
+        //     z: center.z + size.z, // maybe adding even more offset depending on your model
+        //     onUpdate: () => {
+        //         this.camera.instance.fov = 50
+        //         this.camera.instance.updateProjectionMatrix();
+        //     }
+        // });
     }
 }
