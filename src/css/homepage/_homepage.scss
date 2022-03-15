@@ -37,12 +37,6 @@ section {
     top: 0;
     left: 0;
 
-    @include tab {
-        margin-top: -82px;
-        height: 50vh;
-        padding: 0;
-    }
-
     video {
         position: absolute;
         top: 0;
@@ -95,6 +89,11 @@ section {
         height: 100%;
         align-items: center;
         max-width: 80%;
+
+        @include tab {
+            max-width: 90%;
+            grid-template-columns: 1fr;
+        }
 
         &_content {
             top: 0;
