@@ -89,6 +89,7 @@ body::-webkit-scrollbar {
     transform: translateY(100vh);
     transition: all var(--time-animation) ease-in-out;
     z-index: 0;
+    overflow: hidden;
 }
 
 
