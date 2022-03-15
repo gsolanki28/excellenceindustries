@@ -7,9 +7,7 @@ import Experience from './Experience/Experience.js';
 const slideIndicator = document.querySelectorAll('.indicator');
 const allSlides = document.querySelectorAll('.features-item');
 const sliderContainer = document.querySelector('.features-container');
-const hotSpotIndicator = document.querySelectorAll('.explore-hotspot');
-const scrollSnap = document.querySelector('#scrollSnap');
-let scrollSlider = false;
+const hotSpotIndicator = document.querySelectorAll('.features-hotspot');
 
 
 const experience = new Experience(document.querySelector('canvas#product360'));
@@ -40,60 +38,3 @@ hotSpotIndicator.forEach((hotspot) => {
     })
 })
 
-scrollSnap.addEventListener('scroll', function () {
-    if (sliderContainer.offsetTop == scrollSnap.scrollTop ) {
-        scrollSlider = true;
-        sliderContainer.style.position = "sticky";
-        scrollSnap.style.overflow = "hidden";
-    } else {
-        scrollSnap.style.overflowY = "auto";
-        scrollSlider = false;
-    }
-});
-
-// for scroll animation 
-let nextSlide, prevSlide;
-let removescrollSlider = false;
-function scrollSlides() {
-    let activeSlide;
-    slideIndicator.forEach(indicator => {
-        if (indicator.classList.contains('active')) {
-            activeSlide = indicator;
-            let activeDataset = activeSlide.dataset.target;
-            let last = activeDataset.charAt(activeDataset.length - 1);
-            nextSlide = document.querySelector(`[data-target=slide-${parseInt(last) + 1}]`)
-            prevSlide = document.querySelector(`[data-target=slide-${parseInt(last) - 1}]`)
-        }
-    })
-}
-
-window.addEventListener('mousewheel', function (e) {
-    if (scrollSlider) {
-        scrollSlides();
-        let wDelta = e.wheelDelta < 0 ? 'down' : 'up';
-        if (wDelta === "down") {
-            if (nextSlide) {
-                sliderFunction(nextSlide);
-            }
-            else {
-                removescrollSlider = true;
-                scrollSnap.style.overflowY = "auto";
-                sliderContainer.style.position = "relative";
-            }
-        }
-        else {
-            if (prevSlide) {
-                sliderFunction(prevSlide);
-            }
-            else {
-                removescrollSlider = true;
-                scrollSnap.style.overflowY = "auto";
-                sliderContainer.style.position = "relative";
-            }
-        }
-        scrollSlider = false;
-        if (!removescrollSlider) {
-            setTimeout(function () { scrollSlider = true }, 1000)
-        }
-    }
-});
