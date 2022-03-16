@@ -1,6 +1,6 @@
 :root {
     --color-white: #fff;
-    --time-animation: 0.6s;
+    --time-animation: 0.8s;
 }
 
 @keyframes pulse {

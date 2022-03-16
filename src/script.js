@@ -10,27 +10,27 @@ const sliderContainer = document.querySelector('.features-container');
 const hotSpotIndicator = document.querySelectorAll('.features-hotspot');
 
 
-// const experience = new Experience(document.querySelector('canvas#product360'));
-//slider 
-// const sliderFunction = (e) => {
-//     let getSlideId = e.target.dataset.target;
-//     slideIndicator.forEach((indicator) => {
-//         indicator.classList.remove('active');
-//         if (indicator.dataset.target === e.target.dataset.target) {
-//             indicator.classList.add('active');
-//         }
-//     })
-//     allSlides.forEach((slide) => {
-//         slide.classList.remove('active');
-//     })
-//     document.querySelector(`[data-id=${getSlideId}]`).classList.add('active');
-// }
+//const experience = new Experience(document.querySelector('canvas#product360'));
+ 
+const sliderFunction = (e) => {
+    let getSlideId = e.target.dataset.target;
+    slideIndicator.forEach((indicator) => {
+        indicator.classList.remove('active');
+        if (indicator.dataset.target === e.target.dataset.target) {
+            indicator.classList.add('active');
+        }
+    })
+    allSlides.forEach((slide) => {
+        slide.classList.remove('active');
+    })
+    document.querySelector(`[data-id=${getSlideId}]`).classList.add('active');
+}
 
-// slideIndicator.forEach((indicator) => {
-//     indicator.addEventListener('click', (e) => {
-//         sliderFunction(e);
-//     })
-// });
+slideIndicator.forEach((indicator) => {
+    indicator.addEventListener('click', (e) => {
+        sliderFunction(e);
+    })
+});
 
 // hotSpotIndicator.forEach((hotspot) => {
 //     hotspot.addEventListener('click', (e) => {
