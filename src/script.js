@@ -10,7 +10,7 @@ const sliderContainer = document.querySelector('.features-container');
 const hotSpotIndicator = document.querySelectorAll('.features-hotspot');
 
 
-//const experience = new Experience(document.querySelector('canvas#product360'));
+const experience = new Experience(document.querySelector('canvas#product360'));
  
 const sliderFunction = (e) => {
     let getSlideId = e.target.dataset.target;

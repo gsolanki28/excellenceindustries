@@ -61,13 +61,13 @@
         </a>
       </div>
     </section>
-    <!-- <section id="product3d" class="s2 product-3d m-0 pr text-center">
+    <section id="product3d" class="section product-3d m-0 pr text-center">
             <div id="loader"></div>
             <canvas id="product360" width="700"></canvas>
             <svg class="product-3d-svg" width="60" height="35">
                 <use xlink:href="/static/assets/icons/icons.svg#360Icon">
             </svg>
-        </section> -->
+        </section>
     <section id="exploreDiv" class="section explore-wrap">
       <div class="container explore">
         <div class="explore_content">
@@ -342,7 +342,7 @@
     document.querySelectorAll(".explore-hotspot").forEach((hotspot) => {
       hotspot.addEventListener("click", (e) => {
         sliderFunction(e);
-        fullpage_api.moveTo(3);
+        fullpage_api.moveTo(4);
         e.preventDefault();
       });
     });
@@ -357,7 +357,7 @@
     slideIndicator.forEach((indicator) => {
       indicator.addEventListener("click", (e) => {
         sliderFunction(e);
-        fullpage_api.moveTo(3);
+        fullpage_api.moveTo(4);
       });
     });
 

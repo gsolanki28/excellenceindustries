@@ -73,8 +73,12 @@ export default class Experience {
     }
 
     mouseMoveEvent() {
-        this.mouse.x = this.cursor.x / this.sizes.width * 2 - 1
-        this.mouse.y = -(this.cursor.y / this.sizes.height) * 2 + 1
+        const clientX = this.cursor.x;
+        const clientY = this.cursor.y;
+        this.mouse.x = (clientX / this.sizes.width) * 2 - 1
+        this.mouse.y = - (clientY / this.sizes.height) * 2 + 1
+        this.tooltip.x = clientX;
+        this.tooltip.y =  clientY;
     }
 
     clickEvent() {
