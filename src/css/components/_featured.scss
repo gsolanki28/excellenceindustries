@@ -1,21 +1,10 @@
 .featured {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
 
     video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
         object-fit: cover;
     }
 
     &_content {
-        position: absolute;
         left: 68px;
         top: 50%;
         transform: translateY(-50%);
@@ -25,7 +14,6 @@
             left: 0;
             width: 100%;
             text-align: center;
-
         }
 
         &-title {
@@ -51,8 +39,7 @@
 }
 
 /* mouse animation */
-.scroll-downs {
-    position: absolute;
+.scroll-down {
     bottom: 20px;
     right: 0;
     left: 0;

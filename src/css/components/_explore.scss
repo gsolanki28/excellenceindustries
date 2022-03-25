@@ -1,9 +1,4 @@
 .explore {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
 
     &-l {
         flex: auto;
@@ -30,7 +25,6 @@
     }
 
     &_content {
-        position: relative;
 
         &-h2 {
             text-transform: uppercase;
@@ -60,17 +54,10 @@
         }
     }
 
-    &-img-w {
-        position: relative;
-        height: 100%;
+    &-img {
 
-        &-img {
-            width: 100%;
-            height: 100%;
-
-            &.reverse {
-                transform: scaleX(-1);
-            }
+        &.reverse {
+            transform: scaleX(-1);
         }
     }
 
@@ -102,7 +89,6 @@
     }
 
     &-360-icon {
-        position: absolute;
         right: 0;
         bottom: 2vh;
         width: 14%;
