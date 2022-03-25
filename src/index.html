@@ -61,13 +61,13 @@
         </a>
       </div>
     </section>
-    <section id="product3d" class="section product-3d m-0 pr text-center">
+    <!-- <section id="product3d" class="section product-3d m-0 pr text-center">
             <div id="loader"></div>
             <canvas id="product360" width="700"></canvas>
             <svg class="product-3d-svg" width="60" height="35">
                 <use xlink:href="/static/assets/icons/icons.svg#360Icon">
             </svg>
-        </section>
+        </section> -->
     <section id="exploreDiv" class="section explore-wrap">
       <div class="container explore">
         <div class="explore_content">
@@ -327,6 +327,11 @@
       <a href="javascript:void(0)" class="modal-close">
         &#10006;
       </a>
+      <div id="loader"></div>
+      <canvas id="product360" ></canvas>
+      <svg class="product-3d-svg" width="60" height="35">
+          <use xlink:href="/static/assets/icons/icons.svg#360Icon">
+      </svg>
     </div>
   </div>
   <script src="./fullpage.dragAndMove.min.js"></script>
@@ -390,18 +395,7 @@
     };
 
 
-    let modal360 = document.querySelector('.modal-360');
-    document.querySelector('.explore-360-icon').addEventListener('click', function () {
-      modal360.style.display = "grid";
-    })
-
-    function closeModal() {
-      modal360.style.display = "none";
-    }
-
-    document.querySelector('.modal-close').addEventListener('click', function () {
-      closeModal()
-    })
+    
 
 
 

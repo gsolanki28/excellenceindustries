@@ -38,6 +38,8 @@ export default class Experience {
         this.renderer = new Renderer()
         this.world = new World();
 
+        this.tooltip = {};
+
         // Resize event
         this.sizes.on('resize', () => {
             this.resize()

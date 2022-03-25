@@ -7,8 +7,8 @@ export default class Sizes extends EventEmitter
         super()
 
         // Setup
-        this.width = document.body.clientWidth
-        this.height = 600
+        this.width = document.querySelector('.modal-dialog').innerWidth
+        this.height = document.querySelector('.modal-dialog').innerHeight
         this.pixelRatio = Math.min(window.devicePixelRatio, 2)
 
         // Resize event

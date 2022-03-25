@@ -10,7 +10,20 @@ const sliderContainer = document.querySelector('.features-container');
 const hotSpotIndicator = document.querySelectorAll('.features-hotspot');
 
 
-const experience = new Experience(document.querySelector('canvas#product360'));
+
+let modal360 = document.querySelector('.modal-360');
+    document.querySelector('.explore-360-icon').addEventListener('click', function () {
+      modal360.style.display = "grid";
+      const experience = new Experience(document.querySelector('canvas#product360'));
+    })
+
+    function closeModal() {
+      modal360.style.display = "none";
+    }
+
+    document.querySelector('.modal-close').addEventListener('click', function () {
+      closeModal()
+    })
  
 const sliderFunction = (e) => {
     let getSlideId = e.target.dataset.target;
