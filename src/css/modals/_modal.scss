@@ -1,0 +1,27 @@
+.modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    place-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    &-dialog {
+        width: 95%;
+        height: 95%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    &-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 22px;
+        color: #0098BF;
+    }
+}
+
+
+@import '../components/canvas';

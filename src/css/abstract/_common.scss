@@ -42,11 +42,21 @@
     width: 100%;
 }
 
+@mixin tab {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
 .container {
-    max-width: 1122px;
+    max-width: 80%;
     padding: 0 20px;
     margin: 0 auto;
     position: relative;
+
+    @include tab {
+        max-width: 100%;
+    }
 }
 
 .h-screen {
@@ -69,7 +79,3 @@
 .inline-flex {
     display: inline-flex;
 }
-
-@mixin tab {
-    @media (max-width: 1024px) { @content; }
-  }
