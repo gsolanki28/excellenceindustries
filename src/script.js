@@ -5,7 +5,7 @@ import Experience from './Experience/Experience.js';
 
 let modal360 = document.querySelector('.modal-360');
 let fullPage = document.querySelector('#fullpage');
-document.querySelector('.explore-360-icon').addEventListener('click', function () {
+document.querySelector('.experience-360').addEventListener('click', function () {
     modal360.style.display = "grid";
     const experience = new Experience(document.querySelector('canvas#product360'));
 })
