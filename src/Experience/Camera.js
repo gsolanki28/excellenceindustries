@@ -3,6 +3,7 @@ import Experience from './Experience';
 import {
     OrbitControls
 } from 'three/examples/jsm/controls/OrbitControls.js';
+import mobileCheck from './Utils/helper';
 
 export default class Camera {
     constructor() {
@@ -10,6 +11,7 @@ export default class Camera {
         this.sizes = this.experience.sizes;
         this.scene = this.experience.scene;
         this.canvas = this.experience.canvas;
+        this.fov = mobileCheck() ? 65 : 35;
 
         this.setInstance();
         this.setControls();
@@ -17,7 +19,8 @@ export default class Camera {
     }
 
     setInstance() {
-        this.instance = new THREE.PerspectiveCamera(35, this.sizes.width / this.sizes.height, 0.1, 10);
+
+        this.instance = new THREE.PerspectiveCamera(this.fov, this.sizes.width / this.sizes.height, 0.1, 10);
         this.instance.position.set(3, 4.9, 4);
         this.scene.add(this.instance);
     }
