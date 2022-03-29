@@ -8,23 +8,26 @@
         padding: 0 44px;
     }
 
-    .nav {
-        &_ul {
-            @include tab {
-                column-count: 2;
-                display: block;
-                text-align: center;
-            }
+    &_nav {
+        .nav {
+            &_ul {
+                @include tab {
+                    column-count: 2;
+                    display: block;
+                    text-align: center;
+                }
 
-            &-li {
-                &-a {
-                    font-weight: 500;
+                &-li {
+                    &-a {
+                        font-weight: 500;
+                    }
                 }
             }
+
         }
 
         &-2 {
-            margin-top: 55px;
+            margin-top: 10px;
 
             @include tab {
                 margin-top: 25px;
@@ -37,6 +40,7 @@
             }
         }
     }
+
 
     &-hr {
         height: 1px;

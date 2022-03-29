@@ -42,27 +42,27 @@
     <symbol id="degreeIcon" viewBox="0 0 7 8" fill="currentColor">
         <path d="M3.732 0.623999C4.204 0.623999 4.636 0.699999 5.028 0.852C5.42 0.996 5.756 1.208 6.036 1.488C6.316 1.768 6.532 2.108 6.684 2.508C6.836 2.908 6.912 3.356 6.912 3.852C6.912 4.356 6.836 4.808 6.684 5.208C6.532 5.608 6.316 5.948 6.036 6.228C5.756 6.508 5.42 6.724 5.028 6.876C4.636 7.028 4.204 7.104 3.732 7.104C3.26 7.104 2.828 7.028 2.436 6.876C2.044 6.724 1.708 6.508 1.428 6.228C1.148 5.948 0.928 5.608 0.768 5.208C0.616 4.808 0.54 4.356 0.54 3.852C0.54 3.356 0.616 2.908 0.768 2.508C0.928 2.108 1.148 1.768 1.428 1.488C1.708 1.208 2.044 0.996 2.436 0.852C2.828 0.699999 3.26 0.623999 3.732 0.623999ZM3.732 5.7C4.188 5.7 4.52 5.552 4.728 5.256C4.936 4.952 5.04 4.488 5.04 3.864C5.04 3.24 4.936 2.78 4.728 2.484C4.52 2.18 4.188 2.028 3.732 2.028C2.844 2.028 2.4 2.64 2.4 3.864C2.4 5.088 2.844 5.7 3.732 5.7Z" fill="currentColor"/>
     </symbol>
-    <symbol id="360IconNew" viewBox="0 0 51 45.842" style="&#10;">
+    <symbol id="360IconNew" viewBox="0 0 51.5 46.381" fill="currentColor">
         <g id="Layer_2" data-name="Layer 2">
             <g id="Layer_2-2" data-name="Layer 2">
-                <polygon points="25.294 0.577 7.731 10.769 7.776 31.075 25.384 41.189 42.947 30.997 42.902 10.691 25.294 0.577" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+                <polygon points="25.544 0.866 7.981 11.058 8.026 31.364 25.634 41.478 43.197 31.286 43.152 10.98 25.544 0.866" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
                 <g>
-                    <line x1="25.294" y1="0.577" x2="25.294" y2="1.766" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
-                    <line x1="25.294" y1="4.337" x2="25.294" y2="18.479" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="2.571 2.571"/>
-                    <polyline points="25.294 19.765 25.294 20.954 24.265 21.548" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
-                    <line x1="22.056" y1="22.824" x2="9.91" y2="29.842" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="2.551 2.551"/>
-                    <line x1="8.805" y1="30.48" x2="7.776" y2="31.075" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+                    <line x1="25.544" y1="0.866" x2="25.544" y2="2.055" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+                    <line x1="25.544" y1="4.626" x2="25.544" y2="18.768" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" stroke-dasharray="2.571 2.571"/>
+                    <polyline points="25.544 20.054 25.544 21.242 24.515 21.837" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+                    <line x1="22.306" y1="23.113" x2="10.16" y2="30.131" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" stroke-dasharray="2.551 2.551"/>
+                    <line x1="9.055" y1="30.769" x2="8.026" y2="31.364" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
                 </g>
-                <line x1="7.731" y1="10.769" x2="25.294" y2="20.954" fill="none" stroke="#fff" stroke-miterlimit="10"/>
-                <line x1="42.902" y1="10.691" x2="25.294" y2="20.954" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+                <line x1="7.981" y1="11.058" x2="25.544" y2="21.242" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+                <line x1="43.152" y1="10.98" x2="25.544" y2="21.242" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
                 <g>
-                    <line x1="25.294" y1="20.954" x2="26.327" y2="21.541" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
-                    <line x1="28.554" y1="22.808" x2="40.8" y2="29.776" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="2.562 2.562"/>
-                    <line x1="41.914" y1="30.409" x2="42.947" y2="30.997" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+                    <line x1="25.544" y1="21.242" x2="26.577" y2="21.83" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+                    <line x1="28.804" y1="23.097" x2="41.05" y2="30.065" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" stroke-dasharray="2.562 2.562"/>
+                    <line x1="42.164" y1="30.698" x2="43.197" y2="31.286" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
                 </g>
-                <path d="M7.822,18.792C3.3,21.607.5,25.5.5,29.79" fill="none" stroke="#fff" stroke-miterlimit="10"/>
-                <path d="M2.5,35.9c3.816,5.553,12.677,9.444,23,9.444,13.807,0,25-6.963,25-15.552,0-3.71-2.088-7.117-5.573-9.79" fill="none" stroke="#fff" stroke-miterlimit="10"/>
-                <polyline points="6.895 37.59 2.298 35.684 3.848 41.003" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"/>
+                <path d="M8.072,19.081C3.548,21.9.75,25.784.75,30.078" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+                <path d="M2.752,36.187c3.816,5.553,12.677,9.444,23,9.444,13.807,0,25-6.963,25-15.553,0-3.71-2.088-7.116-5.573-9.789" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+                <polyline points="7.145 37.879 2.548 35.973 4.098 41.292" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
             </g>
         </g>
     </symbol>
