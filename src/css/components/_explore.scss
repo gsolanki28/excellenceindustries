@@ -38,6 +38,7 @@
 
             @include tab {
                 font-size: 16px;
+                line-height: 20px;
             }
         }
 
@@ -96,6 +97,10 @@
         border-radius: 8px;
         color: #fff;
         margin-top: 100px;
+
+        @include tab {
+            margin-top: 35px;
+        }
 
         .icon-360 {
             margin-left: 15px;

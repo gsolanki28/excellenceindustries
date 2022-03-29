@@ -4,11 +4,22 @@
     padding: 27px 0;
     width: 100%;
 
+    @include tab {
+        position: absolute;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+    }
+
     &-padding {
         padding: 0 44px;
     }
 
     &_nav {
+        @include tab{
+            flex-basis: 100%;
+        }
+
         .nav {
             &_ul {
                 @include tab {

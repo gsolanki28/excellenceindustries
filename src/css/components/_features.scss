@@ -82,6 +82,7 @@
 
             @include tab {
                 font-size: 16px;
+                line-height: 20px;
             }
         }
 
@@ -225,7 +226,7 @@
 
     @include tab {
         top: auto;
-        bottom: 5vh;
+        bottom: 2vh;
         right: 0;
         left: 0;
         display: flex;
@@ -233,6 +234,7 @@
         justify-content: center;
         width: auto;
         height: auto;
+        background-color: #fff;
     }
 
     .indicator {
