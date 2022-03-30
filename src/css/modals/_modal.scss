@@ -5,6 +5,7 @@
     left: 0;
     place-items: center;
     background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
 
     &-dialog {
         width: 95%;

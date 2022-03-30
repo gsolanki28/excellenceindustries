@@ -4,6 +4,8 @@
     &-svg {
         display: block;
         margin: -60px auto 0;
+        position: relative;
+        z-index: 1;
     }
 }
 
