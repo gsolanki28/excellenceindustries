@@ -67,6 +67,7 @@
         cursor: pointer;
         z-index: 1;
         animation: hotspotTransition 1s ease-in-out infinite alternate;
+        -webkit-animation: hotspotTransition 1s ease-in-out infinite alternate;
 
         &.hotspot-1 {
             top: 18%;
@@ -76,16 +77,22 @@
         &.hotspot-4 {
             left: 39%;
             top: 23%;
+            animation-delay: 15ms;
+            -webkit-animation-delay: 15ms;
         }
 
         &.hotspot-2 {
             right: 34%;
             top: 28%;
+            animation-delay: 5ms;
+            -webkit-animation-delay: 5ms;
         }
 
         &.hotspot-3 {
             left: 19%;
             top: 12%;
+            animation-delay: 5ms;
+            -webkit-animation-delay: 10ms;
         }
     }
 

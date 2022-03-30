@@ -57,20 +57,20 @@
 
 @keyframes hotspotTransition {
     0% {
-        transform: scale(1);
+        transform: translate3d(0,0,0) scale(1);
     }
 
     100% {
-        transform: scale(2);
+        transform: translate3d(0,0,0) scale(2);
     }
 }
 
 @-webkit-keyframes hotspotTransition {
     0% {
-        transform: scale(1);
+        -webkit-transform: translate3d(0,0,0) scale(1);
     }
 
     100% {
-        transform: scale(2);
+        -webkit-transform: translate3d(0,0,0) scale(2);
     }
 }
