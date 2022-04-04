@@ -31,48 +31,33 @@ modal360.addEventListener('touchmove', handleEvent, false);
 
 
 
-// full page JS
 
-// new fullpage("#fullpage", {
-//     //options here
-//     //anchors: ["firstPage", "secondPage", "3rdPage", "4thpage"],
-//     menu: "#menu",
-//     dragAndMove: true,
-//     licenseKey: "8EF54198-043049E8-A2559EAF-7849E171",
-//     dragAndMoveKey: "ZXhpdGVzdC5jb21fQ09FWkhKaFowRnVaRTF2ZG1VPTgycg==",
-//     offsetSections: false,
-//     slidesNavigation: true,
-//     scrollOverflow: false,
-//     onLeave: function (origin, destination, direction) {
-//         destination.item.classList.add("lazy-loaded");
-//     }
-// });
+const slideIndicator = document.querySelectorAll(".indicator");
+const allSlides = document.querySelectorAll(".feature");
+const featuredContainer = document.querySelector(".features-container");
+const exploreContainer = document.querySelector(".explore");
+const hotSpotIndicator = document.querySelectorAll(".feature-hotspot");
+document.querySelectorAll(".explore-hotspot").forEach((hotspot) => {
+    hotspot.addEventListener("click", (e) => {
+        sliderFunction(e);
+        featuredContainer.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        e.preventDefault();
+    });
+});
 
-// const slideIndicator = document.querySelectorAll(".indicator");
-// const allSlides = document.querySelectorAll(".feature");
-// const sliderContainer = document.querySelector(".features-container");
-// const hotSpotIndicator = document.querySelectorAll(".feature-hotspot");
-// document.querySelectorAll(".explore-hotspot").forEach((hotspot) => {
-//     hotspot.addEventListener("click", (e) => {
-//         sliderFunction(e);
-//         fullpage_api.moveTo(3);
-//         e.preventDefault();
-//     });
-// });
+document
+    .querySelector(".scroll-down")
+    .addEventListener("click", (e) => {
+        exploreContainer.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        e.preventDefault();
+    });
 
-// document
-//     .querySelector(".scroll-down")
-//     .addEventListener("click", (e) => {
-//         fullpage_api.moveTo(2);
-//         e.preventDefault();
-//     });
-
-// slideIndicator.forEach((indicator) => {
-//     indicator.addEventListener("click", (e) => {
-//         sliderFunction(e);
-//         fullpage_api.moveTo(3);
-//     });
-// });
+slideIndicator.forEach((indicator) => {
+    indicator.addEventListener("click", (e) => {
+        sliderFunction(e);
+        featuredContainer.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    });
+});
 
 const sliderFunction = (e) => {
     let getSlideId = e.target.dataset.target;

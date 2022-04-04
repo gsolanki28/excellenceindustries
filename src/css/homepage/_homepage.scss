@@ -1,14 +1,29 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: #bcc0c4;
+}
+
+
 html,
 body {
-    overflow: hidden;
     height: 100%;
 }
 
-.full-page{
+html {
+    overflow: hidden;
+}
+
+body {
     scroll-snap-type: y mandatory;
-    overflow-y: auto;
-    height: 100%;
-    position: relative;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #bcc0c4;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 section {
