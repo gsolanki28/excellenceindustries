@@ -1,22 +1,7 @@
-.search-wrap {
-    padding: 25px 0;
-    flex: auto;
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-    @include tab {
-        padding-bottom: 100px;
-    }
-}
-
 .search {
     background: rgba(0, 152, 191, 0.2);
     border-radius: 8px;
     padding: 30px 79px;
-    margin: 0 auto;
-    max-width: 90%;
-    width: 100%;
 
     @include tab {
         flex-direction: column;

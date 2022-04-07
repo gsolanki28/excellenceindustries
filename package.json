@@ -23,6 +23,7 @@
         "portfinder-sync": "0.0.2",
         "raw-loader": "^4.0.2",
         "sass-loader": "^12.6.0",
+        "seamless-scroll-polyfill": "^2.1.8",
         "style-loader": "^3.3.1",
         "three": "^0.134.0",
         "three.interaction": "^0.2.3",

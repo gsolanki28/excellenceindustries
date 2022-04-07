@@ -1,6 +1,7 @@
 import './css/main.scss'
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import { scrollIntoView } from "seamless-scroll-polyfill";
 
 import Experience from './Experience/Experience.js';
 
@@ -40,7 +41,8 @@ const hotSpotIndicator = document.querySelectorAll(".feature-hotspot");
 document.querySelectorAll(".explore-hotspot").forEach((hotspot) => {
     hotspot.addEventListener("click", (e) => {
         sliderFunction(e);
-        featuredContainer.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        scrollIntoView(featuredContainer, { behavior: "smooth", block: "center", inline: "center" });
+        // featuredContainer.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
         e.preventDefault();
     });
 });
@@ -48,7 +50,8 @@ document.querySelectorAll(".explore-hotspot").forEach((hotspot) => {
 document
     .querySelector(".scroll-down")
     .addEventListener("click", (e) => {
-        exploreContainer.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        scrollIntoView(exploreContainer, { behavior: "smooth", block: "center", inline: "center" });
+        // exploreContainer.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
         e.preventDefault();
     });
 

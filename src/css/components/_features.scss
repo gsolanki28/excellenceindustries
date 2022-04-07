@@ -1,10 +1,10 @@
 .features-container {
-    margin: 0;
     position: relative;
     background-color: #fff;
     top: 0;
     overflow: hidden;
     z-index: 1;
+    height: 100%;
 }
 
 .features {
@@ -29,7 +29,6 @@
     opacity: 0;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 50px;
     justify-content: space-between;
 
     @include tab {
