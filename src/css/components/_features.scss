@@ -169,7 +169,7 @@
         &:before {
             content: '';
             height: 2px;
-            width: 25vw;
+            width: 28vw;
             background-color: #fd000066;
             position: absolute;
 
@@ -198,7 +198,7 @@
             top: 25%;
 
             &:before {
-                width: 15vw;
+                width: 17vw;
                 top: 35px;
                 left: 35px;
             }
@@ -211,7 +211,7 @@
             &::before {
                 top: 35px;
                 left: 35px;
-                width: 35vw;
+                width: 39vw;
             }
         }
 
@@ -222,7 +222,7 @@
             &::before {
                 top: 35px;
                 left: 35px;
-                width: 32vw;
+                width: 27vw;
             }
         }
     }
