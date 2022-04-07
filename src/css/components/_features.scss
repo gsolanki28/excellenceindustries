@@ -165,8 +165,7 @@
     &-hotspot {
         position: absolute;
         z-index: 1;
-        animation: featureHotspotTransition 1s ease-in-out infinite alternate;
-        -webkit-animation: featureHotspotTransition 1s ease-in-out infinite alternate;
+
         &:before {
             content: '';
             height: 2px;
@@ -177,6 +176,11 @@
             @include max-tab {
                 display: none;
             }
+        }
+
+        &-svg {
+            animation: featureHotspotTransition 1s ease-in-out infinite alternate;
+            -webkit-animation: featureHotspotTransition 1s ease-in-out infinite alternate;
         }
 
         &.hotspot-1 {
