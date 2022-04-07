@@ -20,6 +20,10 @@
         opacity: 0;
     }
 
+    10% {
+        opacity: 0;
+    }
+
     100% {
         opacity: 1;
     }
@@ -30,6 +34,10 @@
         opacity: 0;
     }
 
+    10% {
+        opacity: 0;
+    }
+
     100% {
         opacity: 1;
     }
@@ -37,6 +45,10 @@
 
 @-webkit-keyframes FadeIn {
     0% {
+        opacity: 0;
+    }
+
+    10% {
         opacity: 0;
     }
 
@@ -72,5 +84,25 @@
 
     100% {
         -webkit-transform: translate3d(0,0,0) scale(2);
+    }
+}
+
+@keyframes featureHotspotTransition {
+    0% {
+        transform: translate3d(0,0,0) scale(0.7);
+    }
+
+    100% {
+        transform: translate3d(0,0,0) scale(1.1);
+    }
+}
+
+@-webkit-keyframes featureHotspotTransition {
+    0% {
+        -webkit-transform: translate3d(0,0,0) scale(0.7);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0,0,0) scale(1.1);
     }
 }
