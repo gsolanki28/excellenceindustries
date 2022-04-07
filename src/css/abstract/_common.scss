@@ -55,8 +55,20 @@
     flex: auto;
 }
 
-@mixin tab {
+@mixin max-tab {
     @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin only-tab {
+    @media (max-width: 1024px) and (min-width:767px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 767px) {
         @content;
     }
 }
@@ -67,7 +79,7 @@
     margin: 0 auto;
     position: relative;
 
-    @include tab {
+    @include max-tab {
         max-width: 100%;
     }
 }

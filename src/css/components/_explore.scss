@@ -1,13 +1,19 @@
 .explore {
+    padding: 100px 0 50px;
+
+    @include mobile {
+        padding: 60px 0 30px;
+    }
+
     &-l {
         flex: auto;
         max-width: 30%;
 
-        @include tab {
+        @include max-tab {
             max-width: initial;
             flex: initial;
             order: 2;
-            margin:50px auto 0;
+            margin: 50px auto 0;
         }
 
     }
@@ -16,7 +22,7 @@
         flex: auto;
         max-width: 50%;
 
-        @include tab {
+        @include max-tab {
             max-width: initial;
             flex-basis: 100%;
             order: 1;
@@ -35,7 +41,7 @@
             line-height: 30px;
             max-width: 450px;
 
-            @include tab {
+            @include max-tab {
                 font-size: 16px;
                 line-height: 20px;
             }
@@ -104,7 +110,7 @@
         color: #fff;
         margin-top: 100px;
 
-        @include tab {
+        @include max-tab {
             margin-top: 35px;
         }
 

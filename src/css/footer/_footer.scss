@@ -9,13 +9,13 @@
     }
 
     &_nav {
-        @include tab{
+        @include max-tab{
             flex-basis: 100%;
         }
 
         .nav {
             &_ul {
-                @include tab {
+                @include max-tab {
                     column-count: 2;
                     display: block;
                     text-align: center;
@@ -33,7 +33,7 @@
         &-2 {
             margin-top: 10px;
 
-            @include tab {
+            @include max-tab {
                 margin-top: 25px;
             }
 

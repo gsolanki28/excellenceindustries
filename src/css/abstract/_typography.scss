@@ -10,17 +10,18 @@ h1 {
     font-size: 58px;
     line-height: 62px;
 
-    @include tab {
+    @include mobile {
         font-size: 32px;
         line-height: 34px;
     }
+
 }
 
 h2 {
     font-size: 38px;
     line-height: 46px;
 
-    @include tab {
+    @include mobile {
         font-size: 28px;
         line-height: 32px;
     }
@@ -30,7 +31,7 @@ h3 {
     font-size: 32px;
     line-height: 40px;
 
-    @include tab {
+    @include mobile {
         font-size: 24px;
         line-height: 26px;
     }
@@ -41,7 +42,7 @@ h4 {
     font-size: 28px;
     line-height: 30px;
 
-    @include tab {
+    @include mobile {
         font-size: 22px;
         line-height: 24px;
     }

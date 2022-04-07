@@ -26,11 +26,6 @@ body {
 
 section {
     position: relative;
-    margin: 100px 0;
-
-    @include tab {
-        margin: 75px 0;
-    }
 
     &.form-footer {
         display: flex;

@@ -1,9 +1,17 @@
+.search-wrap {
+    padding: 100px 0;
+
+    @include mobile {
+        padding: 60px 0;
+    }
+}
+
 .search {
     background: rgba(0, 152, 191, 0.2);
     border-radius: 8px;
     padding: 30px 79px;
 
-    @include tab {
+    @include max-tab {
         flex-direction: column;
         padding: 25px;
     }
@@ -12,7 +20,7 @@
         flex: auto;
         max-width: 28%;
 
-        @include tab {
+        @include max-tab {
             max-width: 100%;
             margin-bottom: 15px;
         }
@@ -34,7 +42,7 @@
         flex: auto;
         max-width: 55%;
 
-        @include tab {
+        @include max-tab {
             max-width: 100%;
         }
 
@@ -47,7 +55,7 @@
             max-width: 48%;
             width: 100%;
 
-            @include tab {
+            @include max-tab {
                 max-width: 100%;
             }
         }
@@ -73,7 +81,7 @@
         align-self: flex-start;
         margin-top: 70px;
 
-        @include tab {
+        @include max-tab {
             display: none;
         }
     }

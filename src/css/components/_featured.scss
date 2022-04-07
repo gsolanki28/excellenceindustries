@@ -12,7 +12,7 @@
         transform: translateY(-50%);
         color: #FFFFFF;
 
-        @include tab {
+        @include max-tab {
             left: 0;
             width: 100%;
             text-align: center;
@@ -30,7 +30,7 @@
             line-height: 62px;
             color: #ffffff;
 
-            @include tab {
+            @include mobile {
                 margin-top: 10px;
                 font-size: 18px;
                 line-height: 22px;

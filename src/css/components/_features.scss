@@ -15,7 +15,7 @@
     overflow: hidden;
     left: 0;
 
-    @include tab {
+    @include max-tab {
         width: 100%;
     }
 }
@@ -26,24 +26,30 @@
     left: -180px;
     width: calc(100% + 180px);
     height: 100%;
+    overflow: hidden;
     opacity: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 50px;
 
-    @include tab {
+    @include max-tab {
         left: 0;
         width: 100%;
-        align-items: flex-start;
+        flex-direction: column;
+        justify-content: initial;
+    }
+
+    @include mobile {
+        padding: 30px 0 66px;
     }
 
     &-l {
         flex: auto;
         max-width: 60%;
 
-        @include tab {
+        @include max-tab {
             max-width: 100%;
-            flex-basis: 100%;
+            flex: initial;
 
             &.-left-30 {
                 left: -30px;
@@ -57,7 +63,7 @@
         max-width: 30%;
         padding: 0 20px;
 
-        @include tab {
+        @include max-tab {
             max-width: 100%;
             flex: inherit;
             margin: 0 auto;
@@ -69,7 +75,7 @@
     &_content {
         position: relative;
 
-        @include tab {
+        @include max-tab {
             top: 0 !important;
         }
 
@@ -83,7 +89,7 @@
             line-height: 30px;
             max-width: 450px;
 
-            @include tab {
+            @include mobile {
                 font-size: 16px;
                 line-height: 20px;
             }
@@ -166,7 +172,7 @@
             background-color: #fd000066;
             position: absolute;
 
-            @include tab {
+            @include max-tab {
                 display: none;
             }
         }
@@ -227,7 +233,7 @@
     height: 160px;
     z-index: 2;
 
-    @include tab {
+    @include max-tab {
         top: auto;
         bottom: 2vh;
         right: 0;
@@ -240,6 +246,10 @@
         background-color: #fff;
     }
 
+    @include mobile {
+        bottom: 0;
+    }
+
     .indicator {
         min-width: 16px;
         height: 16px;
@@ -248,7 +258,7 @@
         cursor: pointer;
         margin: 20px 0;
 
-        @include tab {
+        @include max-tab {
             margin: 10px;
         }
 

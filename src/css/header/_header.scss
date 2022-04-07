@@ -6,7 +6,7 @@
     z-index: 1;
     top: 0;
 
-    @include tab {
+    @include max-tab {
         padding: 10px 20px;
 
     }
@@ -15,7 +15,7 @@
     &_logo {
         max-width: 172px;
 
-        @include tab {
+        @include max-tab {
             margin: 0 auto;
         }
     }
