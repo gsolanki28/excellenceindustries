@@ -15,7 +15,7 @@
     &_logo {
         max-width: 172px;
 
-        @include max-tab {
+        @include mobile {
             margin: 0 auto;
         }
     }

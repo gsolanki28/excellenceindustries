@@ -4,22 +4,22 @@
     padding: 27px 0;
     width: 100%;
 
+    @include mobile {
+        padding: 15px 0;
+    }
+
     &-padding {
         padding: 0 44px;
     }
 
     &_nav {
-        @include max-tab{
-            flex-basis: 100%;
+
+        @include mobile {
+            display: none;
         }
 
         .nav {
             &_ul {
-                @include max-tab {
-                    column-count: 2;
-                    display: block;
-                    text-align: center;
-                }
 
                 &-li {
                     &-a {
@@ -33,11 +33,11 @@
         &-2 {
             margin-top: 10px;
 
-            @include max-tab {
-                margin-top: 25px;
+            @include mobile {
+                display: none;
             }
 
-            .nav_ul{
+            .nav_ul {
                 justify-content: center;
             }
 
@@ -55,10 +55,18 @@
         background-color: #ffffff;
         margin: 0 0 16px;
         opacity: 0.4;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &-copyright {
         font-size: 12px;
         line-height: 14px;
+
+        @include mobile {
+            display: none;
+        }
     }
 }
