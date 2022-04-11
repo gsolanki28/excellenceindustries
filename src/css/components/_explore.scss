@@ -60,13 +60,6 @@
         }
     }
 
-    &-img {
-
-        &.reverse {
-            transform: scaleX(-1);
-        }
-    }
-
     &-hotspot {
         position: absolute;
         cursor: pointer;

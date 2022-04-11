@@ -33,6 +33,10 @@ section {
     }
 }
 
+.lazyload {
+    filter: blur(5px)
+}
+
 
 @import '../components/featured';
 @import '../components/explore';

@@ -1,6 +1,6 @@
 import './css/main.scss'
-import 'lazysizes';
-import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+// import 'lazysizes';
+// import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import { scrollIntoView } from "seamless-scroll-polyfill";
 
 import Experience from './Experience/Experience.js';
@@ -78,7 +78,13 @@ const sliderFunction = (e) => {
         .classList.add("active");
 };
 
-
+let lazyImages = document.querySelectorAll('.lazyload');
+lazyImages.forEach(image => {
+    image.onload = function () {
+        image.style.filter = "none";
+    }
+    image.src = image.dataset.src;
+})
 
 
 
